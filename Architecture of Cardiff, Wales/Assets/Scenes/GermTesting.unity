@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 82471682}
   - component: {fileID: 82471681}
   - component: {fileID: 82471680}
+  - component: {fileID: 82471685}
   m_Layer: 0
   m_Name: Germ (4)
   m_TagString: Untagged
@@ -254,6 +255,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &82471685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 82471679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &149531526
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +278,7 @@ GameObject:
   - component: {fileID: 149531529}
   - component: {fileID: 149531528}
   - component: {fileID: 149531527}
+  - component: {fileID: 149531532}
   m_Layer: 0
   m_Name: Germ (2)
   m_TagString: Untagged
@@ -395,6 +408,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &149531532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 149531526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &568885666
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +516,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!1 &591915282
 GameObject:
@@ -506,6 +530,7 @@ GameObject:
   - component: {fileID: 591915283}
   - component: {fileID: 591915286}
   - component: {fileID: 591915287}
+  - component: {fileID: 591915288}
   m_Layer: 0
   m_Name: Germ
   m_TagString: Untagged
@@ -635,6 +660,17 @@ PolygonCollider2D:
       - {x: 0.00000004371139, y: -0.5}
       - {x: 0.43301272, y: -0.24999996}
       - {x: 0.43301272, y: 0.24999996}
+--- !u!114 &591915288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 591915282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &591951273
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,6 +683,7 @@ GameObject:
   - component: {fileID: 591951276}
   - component: {fileID: 591951275}
   - component: {fileID: 591951274}
+  - component: {fileID: 591951279}
   m_Layer: 0
   m_Name: Germ (1)
   m_TagString: Untagged
@@ -776,6 +813,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &591951279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 591951273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &713705644
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,7 +921,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!1 &742378529
 GameObject:
@@ -984,6 +1032,7 @@ GameObject:
   - component: {fileID: 1414070018}
   - component: {fileID: 1414070017}
   - component: {fileID: 1414070016}
+  - component: {fileID: 1414070021}
   m_Layer: 0
   m_Name: Germ (5)
   m_TagString: Untagged
@@ -1113,6 +1162,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1414070021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1414070015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1463446670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1185,7 @@ GameObject:
   - component: {fileID: 1463446673}
   - component: {fileID: 1463446672}
   - component: {fileID: 1463446671}
+  - component: {fileID: 1463446676}
   m_Layer: 0
   m_Name: Germ (3)
   m_TagString: Untagged
@@ -1254,6 +1315,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1463446676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1463446670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1807022144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1351,7 +1423,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!1 &1854482149
 GameObject:
@@ -1531,5 +1603,5 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0

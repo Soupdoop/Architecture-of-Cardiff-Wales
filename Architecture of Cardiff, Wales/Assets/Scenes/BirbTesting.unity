@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -635,13 +635,14 @@ GameObject:
   - component: {fileID: 1005117052}
   - component: {fileID: 1005117051}
   - component: {fileID: 1005117050}
+  - component: {fileID: 1005117055}
   m_Layer: 0
   m_Name: birb (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1005117050
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -678,6 +679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c71d2db4cc00407b95d43d2aba24c61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 0
   deadzone: 0.1
   flapStrength: 100
   rb: {fileID: 1005117052}
@@ -753,12 +755,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1005117049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: -1, z: 0}
+  m_LocalPosition: {x: 2.46, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1005117055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1005117049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1569206771
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +883,7 @@ GameObject:
   - component: {fileID: 1654345559}
   - component: {fileID: 1654345558}
   - component: {fileID: 1654345562}
+  - component: {fileID: 1654345563}
   m_Layer: 0
   m_Name: birb
   m_TagString: Untagged
@@ -888,6 +902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c71d2db4cc00407b95d43d2aba24c61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 1
   deadzone: 0.1
   flapStrength: 100
   rb: {fileID: 1654345559}
@@ -994,6 +1009,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 0.926}
   m_EdgeRadius: 0
+--- !u!114 &1654345563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1654345557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1659375701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,13 +1032,14 @@ GameObject:
   - component: {fileID: 1659375704}
   - component: {fileID: 1659375703}
   - component: {fileID: 1659375702}
+  - component: {fileID: 1659375707}
   m_Layer: 0
   m_Name: birb (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1659375702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1049,6 +1076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c71d2db4cc00407b95d43d2aba24c61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 0
   deadzone: 0.1
   flapStrength: 100
   rb: {fileID: 1659375704}
@@ -1130,6 +1158,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1659375707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1659375701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2112372229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,13 +1246,14 @@ GameObject:
   - component: {fileID: 2116452365}
   - component: {fileID: 2116452364}
   - component: {fileID: 2116452363}
+  - component: {fileID: 2116452368}
   m_Layer: 0
   m_Name: birb (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &2116452363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1250,6 +1290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c71d2db4cc00407b95d43d2aba24c61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 0
   deadzone: 0.1
   flapStrength: 100
   rb: {fileID: 2116452365}
@@ -1325,9 +1366,20 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2116452362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: -2, z: 0}
+  m_LocalPosition: {x: 5.58, y: -1.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2116452368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2116452362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

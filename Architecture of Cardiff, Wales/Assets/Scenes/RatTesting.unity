@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -258,6 +258,7 @@ GameObject:
   - component: {fileID: 610636078}
   - component: {fileID: 610636077}
   - component: {fileID: 610636076}
+  - component: {fileID: 610636081}
   m_Layer: 0
   m_Name: Rat (4)
   m_TagString: Untagged
@@ -276,9 +277,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d64a8ac36cef4e74b08b63e0a126020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 0
   deadzone: 0.1
   movementSpeed: 5
-  jumpStrength: 200
+  jumpStrength: 300
   rb: {fileID: 610636078}
 --- !u!60 &610636077
 PolygonCollider2D:
@@ -379,12 +381,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 610636075}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: -4, z: 0}
+  m_LocalPosition: {x: -3, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &610636081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 610636075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &736701019
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,6 +475,7 @@ GameObject:
   - component: {fileID: 821827764}
   - component: {fileID: 821827763}
   - component: {fileID: 821827762}
+  - component: {fileID: 821827767}
   m_Layer: 0
   m_Name: Rat (1)
   m_TagString: Untagged
@@ -480,9 +494,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d64a8ac36cef4e74b08b63e0a126020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 0
   deadzone: 0.1
   movementSpeed: 5
-  jumpStrength: 200
+  jumpStrength: 300
   rb: {fileID: 821827764}
 --- !u!60 &821827763
 PolygonCollider2D:
@@ -589,6 +604,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &821827767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 821827761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &882591550
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +726,7 @@ GameObject:
   - component: {fileID: 949496655}
   - component: {fileID: 949496654}
   - component: {fileID: 949496653}
+  - component: {fileID: 949496658}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Untagged
@@ -718,9 +745,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d64a8ac36cef4e74b08b63e0a126020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 1
   deadzone: 0.1
   movementSpeed: 5
-  jumpStrength: 200
+  jumpStrength: 300
   rb: {fileID: 949496655}
 --- !u!60 &949496654
 PolygonCollider2D:
@@ -821,12 +849,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 949496652}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: -4, z: 0}
+  m_LocalPosition: {x: -7, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &949496658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949496652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1003864229
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,6 +878,7 @@ GameObject:
   - component: {fileID: 1003864232}
   - component: {fileID: 1003864231}
   - component: {fileID: 1003864230}
+  - component: {fileID: 1003864235}
   m_Layer: 0
   m_Name: Rat (2)
   m_TagString: Untagged
@@ -857,9 +897,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d64a8ac36cef4e74b08b63e0a126020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 0
   deadzone: 0.1
   movementSpeed: 5
-  jumpStrength: 200
+  jumpStrength: 300
   rb: {fileID: 1003864232}
 --- !u!60 &1003864231
 PolygonCollider2D:
@@ -960,12 +1001,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1003864229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: -4, z: 0}
+  m_LocalPosition: {x: -1, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1003864235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1003864229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1224301933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,6 +1129,7 @@ GameObject:
   - component: {fileID: 1310061253}
   - component: {fileID: 1310061252}
   - component: {fileID: 1310061251}
+  - component: {fileID: 1310061256}
   m_Layer: 0
   m_Name: Rat (3)
   m_TagString: Untagged
@@ -1095,9 +1148,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d64a8ac36cef4e74b08b63e0a126020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 0
   deadzone: 0.1
   movementSpeed: 5
-  jumpStrength: 200
+  jumpStrength: 300
   rb: {fileID: 1310061253}
 --- !u!60 &1310061252
 PolygonCollider2D:
@@ -1198,12 +1252,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1310061250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: -4, z: 0}
+  m_LocalPosition: {x: -2, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1310061256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1310061250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1347706379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,6 +1461,7 @@ GameObject:
   - component: {fileID: 1610001803}
   - component: {fileID: 1610001802}
   - component: {fileID: 1610001801}
+  - component: {fileID: 1610001806}
   m_Layer: 0
   m_Name: Rat (7)
   m_TagString: Untagged
@@ -1414,9 +1480,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d64a8ac36cef4e74b08b63e0a126020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 0
   deadzone: 0.1
   movementSpeed: 5
-  jumpStrength: 200
+  jumpStrength: 300
   rb: {fileID: 1610001803}
 --- !u!60 &1610001802
 PolygonCollider2D:
@@ -1517,12 +1584,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1610001800}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: -4, z: 0}
+  m_LocalPosition: {x: -6, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1610001806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1610001800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1796513352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1733,6 +1811,7 @@ GameObject:
   - component: {fileID: 2004899502}
   - component: {fileID: 2004899501}
   - component: {fileID: 2004899500}
+  - component: {fileID: 2004899505}
   m_Layer: 0
   m_Name: Rat (6)
   m_TagString: Untagged
@@ -1751,9 +1830,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d64a8ac36cef4e74b08b63e0a126020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 0
   deadzone: 0.1
   movementSpeed: 5
-  jumpStrength: 200
+  jumpStrength: 300
   rb: {fileID: 2004899502}
 --- !u!60 &2004899501
 PolygonCollider2D:
@@ -1854,12 +1934,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2004899499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: -4, z: 0}
+  m_LocalPosition: {x: -5, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2004899505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004899499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2089743747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1872,6 +1963,7 @@ GameObject:
   - component: {fileID: 2089743750}
   - component: {fileID: 2089743749}
   - component: {fileID: 2089743748}
+  - component: {fileID: 2089743753}
   m_Layer: 0
   m_Name: Rat (5)
   m_TagString: Untagged
@@ -1890,9 +1982,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d64a8ac36cef4e74b08b63e0a126020, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 0
   deadzone: 0.1
   movementSpeed: 5
-  jumpStrength: 200
+  jumpStrength: 300
   rb: {fileID: 2089743750}
 --- !u!60 &2089743749
 PolygonCollider2D:
@@ -1993,9 +2086,20 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2089743747}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: -4, z: 0}
+  m_LocalPosition: {x: -4, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2089743753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089743747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
