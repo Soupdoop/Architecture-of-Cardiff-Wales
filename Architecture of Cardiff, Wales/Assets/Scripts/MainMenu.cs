@@ -7,16 +7,19 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour {
 
     public Text levelNameText;
+    public Dictionary<string, string> levelList = new Dictionary<string, string>() { };
 
     public void FindLevel(string lvl = "") {
         string levelName = (lvl.Equals("")) ? levelNameText.text : lvl;
         Debug.Log(levelName);
-        //Match levelname to levellist
-        //Play game @ that level
+        if (levelList.ContainsKey(levelName)) {
+            PlayGame(levelList[levelName]);
+        }
     }
 
-    public void PlayGame() {
-        SceneManager.LoadScene("Main");
+    public void PlayGame(string level) {
+        //TODO import other saved data
+        SceneManager.LoadScene(level);
     }
 
     public void NewGame() {
