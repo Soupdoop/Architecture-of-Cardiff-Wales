@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+    public bool FindLevel(string levelName) {
+        return false;
+    }
+
     public void PlayGame() {
         SceneManager.LoadScene("Main");
     }
