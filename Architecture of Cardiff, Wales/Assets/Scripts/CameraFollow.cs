@@ -18,7 +18,7 @@ public class CameraFollow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		gameObject.transform.position = followed.transform.position;
+		gameObject.transform.position = new Vector3(followed.transform.position.x,followed.transform.position.y,gameObject.transform.position.z);
 		gameObject.GetComponent<Camera>().orthographicSize = size;
 	}
 
