@@ -10,6 +10,7 @@ public class CarMovement : BasicMovement {
 	public float decelStrength;
 	private float currentSpeed;
 	private float tolerance = 0.05f;
+    private float xCompLastTime;
 	public Rigidbody2D rb;
 
 	// Use this for initialization
@@ -18,6 +19,7 @@ public class CarMovement : BasicMovement {
 		Debug.Log("This is a car starting.");
 		#endif
 		currentSpeed = 0;
+        xCompLastTime = transform.right.x;
 		if (rb == null) {
 			rb = GetComponent<Rigidbody2D>();
 		}
@@ -25,7 +27,13 @@ public class CarMovement : BasicMovement {
 
 	override protected void UpdateFields() {
 		rb.velocity = (Vector2)transform.right.normalized * currentSpeed; //always move toward heading
-	}
+        //This flips the scale of the gameobject
+        if (Mathf.Sign(xCompLastTime) != Mathf.Sign(transform.right.x)) {
+            Vector3 scale = transform.localScale;
+            transform.localScale = new Vector3(scale.x, -1*scale.y, scale.z);
+        }
+        xCompLastTime = transform.right.x;
+    }
 
 	override protected void DoUpAction() {
 		#if DEBUG 
