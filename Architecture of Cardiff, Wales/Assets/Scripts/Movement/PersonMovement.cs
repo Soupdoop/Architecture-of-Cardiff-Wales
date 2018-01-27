@@ -38,7 +38,7 @@ public class PersonMovement : BasicMovement {
 			Debug.Log("Person Jumping!");
 			#endif
 			rb.AddForce(Vector2.up * jumpStrength);
-			jumpCD = 0.1f;
+			jumpCD = 0.5f;
 		}
 	}
 

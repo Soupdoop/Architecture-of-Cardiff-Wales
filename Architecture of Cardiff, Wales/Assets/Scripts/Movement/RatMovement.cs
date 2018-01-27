@@ -8,6 +8,8 @@ public class RatMovement : BasicMovement {
 	public float jumpStrength = 1.0f;
 	public Rigidbody2D rb;
 
+	private float jumpCD = 0.0f;
+
 	// Use this for initialization
 	void Start () {
 		#if DEBUG 
@@ -19,7 +21,7 @@ public class RatMovement : BasicMovement {
 	}
 
 	override protected void UpdateFields() {
-
+		if (jumpCD > 0.0f) jumpCD -= Time.deltaTime;
 	}
 
 	override protected void DoUpAction() {
@@ -27,11 +29,12 @@ public class RatMovement : BasicMovement {
 		//Debug.Log("Rat Up!");
 		#endif
 
-		if (checkOnGround()) {
+		if (jumpCD <= 0.0f && checkOnGround()) {
 			#if DEBUG
 			Debug.Log("Rat Jumping!");
 			#endif
 			rb.AddForce(Vector2.up * jumpStrength);
+			jumpCD = 0.5f;
 		}
 	}
 
