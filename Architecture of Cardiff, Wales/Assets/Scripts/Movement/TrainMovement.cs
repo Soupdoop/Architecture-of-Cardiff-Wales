@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TopDownTrainMovement : BasicMovement {
+public class TrainMovement : BasicMovement {
 
     public float maxSpeed = 100;
     public float movementStrength = 1.0f;
