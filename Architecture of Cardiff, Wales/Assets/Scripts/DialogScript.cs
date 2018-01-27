@@ -7,6 +7,7 @@ public class DialogScript : MonoBehaviour {
 
     public InputField levelEntry;
     public MainMenu MenuPlayer;
+
     /*
     public InputField.SubmitEvent se;
 
