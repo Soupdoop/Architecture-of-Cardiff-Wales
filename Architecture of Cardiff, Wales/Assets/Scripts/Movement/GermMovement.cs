@@ -20,7 +20,6 @@ public class GermMovement : BasicMovement {
 	}
 
 	override protected void UpdateFields() {
-
 	}
 
 	override protected void DoUpAction() {

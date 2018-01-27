@@ -7,6 +7,7 @@ public class TrainScript : MonoBehaviour {
     public float maxSpeed;
     public Rigidbody2D body;
 
+    //True if you want to use up/down, false if you want to use left/right
     public bool Vertical = true;
 
     private string trainType;

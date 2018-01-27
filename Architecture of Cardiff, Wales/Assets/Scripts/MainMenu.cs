@@ -2,15 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour {
 
-    public bool FindLevel(string levelName) {
-        return false;
+    public Text levelNameText;
+    public Dictionary<string, string> levelList = new Dictionary<string, string>() { };
+
+    public void FindLevel(string lvl = "") {
+        string levelName = (lvl.Equals("")) ? levelNameText.text : lvl;
+        Debug.Log(levelName);
+        if (levelList.ContainsKey(levelName)) {
+            PlayGame(levelList[levelName]);
+        }
     }
 
-    public void PlayGame() {
-        SceneManager.LoadScene("Main");
+    public void PlayGame(string level) {
+        //TODO import other saved data
+        SceneManager.LoadScene(level);
+    }
+
+    public void NewGame() {
+        //RESET PROGRESS, START FROM FIRST LEVEL
     }
 
     public void QuitGame() {

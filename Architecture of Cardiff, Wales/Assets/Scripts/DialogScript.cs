@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class DialogScript : MonoBehaviour {
 
     public InputField levelEntry;
-    public InputField.SubmitEvent se;
     public MainMenu MenuPlayer;
+
+    /*
+    public InputField.SubmitEvent se;
 
     private void Start() {
         se = new InputField.SubmitEvent();
@@ -19,9 +21,11 @@ public class DialogScript : MonoBehaviour {
         levelEntry.text = "";
         levelEntry.ActivateInputField();
 
-        if (MenuPlayer.FindLevel(arg)) {
-            MenuPlayer.PlayGame();
-        }
+        //MenuPlayer.FindLevel(arg);
     }
+    */
 
+    public void ClearText() {
+        levelEntry.text = "";
+    }
 }
