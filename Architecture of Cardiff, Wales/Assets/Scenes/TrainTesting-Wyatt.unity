@@ -236,9 +236,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff270be94fefddc4ca0c9cdccd8bf04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activated: 1
+  deadzone: 0.1
   maxSpeed: 100
-  body: {fileID: 302258151}
-  Vertical: 1
+  movementStrength: 1
+  steerSpeed: 0
+  rb: {fileID: 302258151}
 --- !u!1 &1137203268
 GameObject:
   m_ObjectHideFlags: 0
