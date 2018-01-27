@@ -6,12 +6,12 @@ public abstract class Activatable : MonoBehaviour {
 
 	protected bool activated = true;
 
-	bool Activate() {
+	public bool Activate() {
 		activated = true;
 		return activated;
 	}
 
-	bool Deactivate() {
+	public bool Deactivate() {
 		activated = false;
 		return activated;
 	}
