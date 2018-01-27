@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 362625602}
   - component: {fileID: 362625604}
   - component: {fileID: 362625603}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,6 +415,15 @@ Prefab:
       propertyPath: m_Name
       value: plane (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1346755553282622, guid: 911396c5d54d64a3ba805629f14bdc22, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114079931395332824, guid: 911396c5d54d64a3ba805629f14bdc22,
+        type: 2}
+      propertyPath: flightLayer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 911396c5d54d64a3ba805629f14bdc22, type: 2}
   m_IsPrefabParent: 0
@@ -428,7 +437,7 @@ GameObject:
   - component: {fileID: 1160880902}
   - component: {fileID: 1160880904}
   - component: {fileID: 1160880903}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -638,7 +647,7 @@ GameObject:
   - component: {fileID: 1577392561}
   - component: {fileID: 1577392563}
   - component: {fileID: 1577392562}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -737,7 +746,7 @@ GameObject:
   - component: {fileID: 1922142449}
   - component: {fileID: 1922142451}
   - component: {fileID: 1922142450}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -868,6 +877,15 @@ Prefab:
     - target: {fileID: 1346755553282622, guid: 911396c5d54d64a3ba805629f14bdc22, type: 2}
       propertyPath: m_Name
       value: plane (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1346755553282622, guid: 911396c5d54d64a3ba805629f14bdc22, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114079931395332824, guid: 911396c5d54d64a3ba805629f14bdc22,
+        type: 2}
+      propertyPath: flightLayer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 911396c5d54d64a3ba805629f14bdc22, type: 2}

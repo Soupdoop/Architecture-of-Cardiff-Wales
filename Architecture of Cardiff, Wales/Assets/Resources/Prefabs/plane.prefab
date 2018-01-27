@@ -170,6 +170,8 @@ MonoBehaviour:
   decelStrength: 0.5
   minSize: 1
   maxSize: 2
+  normalLayer: 0
+  flightLayer: 9
   rb: {fileID: 50841959132329944}
   collider: {fileID: 60225224301953880}
 --- !u!114 &114535372477494946

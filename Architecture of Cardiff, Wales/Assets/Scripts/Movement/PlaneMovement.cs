@@ -12,6 +12,9 @@ public class PlaneMovement : BasicMovement {
 	public float minSize = 1.0f;
 	public float maxSize = 2.0f;
 
+	public int normalLayer;
+	public int flightLayer;
+
 	private float currentSpeed;
 	private float currentRotation;
 	private float tolerance = 0.05f;
@@ -37,7 +40,11 @@ public class PlaneMovement : BasicMovement {
 		float speedPercentage = rb.velocity.magnitude/topSpeed;
 		float curSize = Mathf.Lerp(minSize, maxSize, speedPercentage);
 		transform.localScale = new Vector3(curSize, curSize, curSize);
-		collider.enabled = rb.velocity.magnitude < tolerance;
+		if (rb.velocity.magnitude < tolerance) {
+			gameObject.layer = (normalLayer);
+		} else {
+			gameObject.layer = (flightLayer);
+		}
 		transform.localRotation = Quaternion.Euler(new Vector3(transform.localRotation.eulerAngles.x, transform.localRotation.eulerAngles.y, currentRotation));
 	}
 
