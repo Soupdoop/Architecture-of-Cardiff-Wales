@@ -5,6 +5,8 @@ using UnityEngine;
 public abstract class BasicMovement : Activatable {
 
 	public float deadzone = 0.1f;
+
+	public LayerMask noJump;
 	
 	// Update is called once per frame
 	void Update () {
@@ -55,4 +57,40 @@ public abstract class BasicMovement : Activatable {
 	abstract protected void DoSpecialAction();
 
 	abstract protected void DoNeutralAction();
+
+	protected bool checkOnGround() {
+		Collider2D thisColl = GetComponent<Collider2D>();
+
+		Vector2 size = (Vector2)(thisColl.bounds.size);
+		Vector3 worldPos = thisColl.bounds.center;
+
+		float bottom = worldPos.y - (size.y / 2f);
+		float left = worldPos.x - (size.x / 3f);
+		float right = worldPos.x + (size.x / 3f);
+
+		int layerMask = ~noJump.value;
+		float rayLength = Mathf.Max(size.y/100.0f, 0.05f);
+
+		RaycastHit2D blray = Physics2D.Raycast(new Vector2(left, bottom), Vector2.down,rayLength, layerMask);
+		RaycastHit2D brray = Physics2D.Raycast(new Vector2(right, bottom), Vector2.down, rayLength, layerMask);
+
+		return blray.collider != null || brray.collider != null;
+	}
+
+	void OnDrawGizmos() {
+		Collider2D thisColl = GetComponent<Collider2D>();
+
+		Vector2 size = (Vector2)(thisColl.bounds.size);
+		Vector3 worldPos = thisColl.bounds.center;
+
+		float bottom = worldPos.y - (size.y / 2f);
+		float left = worldPos.x - (size.x / 3f);
+		float right = worldPos.x + (size.x / 3f);
+
+		float rayLength = Mathf.Max(size.y/100.0f, 0.05f);
+
+		Gizmos.color = Color.red;
+		Gizmos.DrawLine(new Vector2(left, bottom), new Vector2(right, bottom));
+		Gizmos.DrawLine(new Vector2(left, bottom), new Vector2(left, bottom) + (Vector2.down*rayLength));
+	}
 }
