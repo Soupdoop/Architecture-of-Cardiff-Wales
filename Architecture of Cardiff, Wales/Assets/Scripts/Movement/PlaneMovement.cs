@@ -21,7 +21,7 @@ public class PlaneMovement : BasicMovement {
 	public Rigidbody2D rb;
 	public Collider2D smollider;
 
-
+    private Vector2 facing;
 
 	// Use this for initialization
 	void Start () {
@@ -33,20 +33,26 @@ public class PlaneMovement : BasicMovement {
 		if (rb == null) {
 			rb = GetComponent<Rigidbody2D>();
 		}
+        facing = Vector2.right;
 	}
 
 	override protected void UpdateFields() {
-		rb.velocity = (Vector2)transform.right.normalized * currentSpeed; //always move toward heading
+
+        if (Vector2.Angle(transform.right, facing) > 90) {
+            facing *= -1;
+        }
+
+        rb.velocity = (Vector2)transform.right.normalized * currentSpeed; //always move toward heading
 		float speedPercentage = rb.velocity.magnitude/topSpeed;
 		float curSize = Mathf.Lerp(minSize, maxSize, speedPercentage);
-		transform.localScale = new Vector3(curSize, curSize, curSize);
+		transform.localScale = new Vector3(curSize, (facing.x > 0) ? curSize : -curSize, curSize);
 		if (rb.velocity.magnitude < tolerance) {
 			gameObject.layer = (normalLayer);
 		} else {
 			gameObject.layer = (flightLayer);
 		}
 		transform.localRotation = Quaternion.Euler(new Vector3(transform.localRotation.eulerAngles.x, transform.localRotation.eulerAngles.y, currentRotation));
-	}
+    }
 
 	override protected void DoUpAction() {
 		#if DEBUG 
