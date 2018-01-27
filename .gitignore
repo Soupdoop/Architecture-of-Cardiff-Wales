@@ -38,3 +38,6 @@ sysinfo.txt
 *.unitypackage
 Dusk Patrol/Assets/UnityVS.meta
 .DS_Store
+
+# Custom
+*/.vs/
