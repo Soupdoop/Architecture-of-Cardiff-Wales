@@ -65,8 +65,8 @@ public abstract class BasicMovement : Activatable {
 		Vector3 worldPos = thisColl.bounds.center;
 
 		float bottom = worldPos.y - (size.y / 2f);
-		float left = worldPos.x - (size.x / 3f);
-		float right = worldPos.x + (size.x / 3f);
+		float left = worldPos.x - (size.x / 2f);
+		float right = worldPos.x + (size.x / 2f);
 
 		int layerMask = ~noJump.value;
 		float rayLength = Mathf.Max(size.y/100.0f, 0.05f);
@@ -84,8 +84,8 @@ public abstract class BasicMovement : Activatable {
 		Vector3 worldPos = thisColl.bounds.center;
 
 		float bottom = worldPos.y - (size.y / 2f);
-		float left = worldPos.x - (size.x / 3f);
-		float right = worldPos.x + (size.x / 3f);
+		float left = worldPos.x - (size.x / 2f);
+		float right = worldPos.x + (size.x / 2f);
 
 		float rayLength = Mathf.Max(size.y/100.0f, 0.05f);
 
