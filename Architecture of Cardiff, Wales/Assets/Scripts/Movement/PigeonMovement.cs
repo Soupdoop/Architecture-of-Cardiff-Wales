@@ -6,9 +6,12 @@ public class PigeonMovement : BasicMovement {
 
 	bool facing = false; // true == right, false == left
 	public float flapStrength = 1.0f;
+	public float movementSpeed = 1.0f;
 	public Rigidbody2D rb;
 
 	public SpriteRenderer sprite;
+
+	public Animator anim;
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +23,9 @@ public class PigeonMovement : BasicMovement {
 		}
 		if (sprite == null) {
 			sprite = GetComponent<SpriteRenderer>();
+		}
+		if (anim == null) {
+			anim = GetComponent<Animator>();
 		}
 	}
 	
@@ -47,6 +53,8 @@ public class PigeonMovement : BasicMovement {
 		Debug.Log("Pigeon Left!");
 		#endif
 
+		rb.AddForce(Vector2.left * movementSpeed);
+
 		facing = false;
 		sprite.flipX = facing;
 	}
@@ -55,6 +63,8 @@ public class PigeonMovement : BasicMovement {
 		#if DEBUG 
 		Debug.Log("Pigeon Right!");
 		#endif
+
+		rb.AddForce(Vector2.right * movementSpeed);
 
 		facing = true;
 		sprite.flipX = facing;
@@ -65,10 +75,12 @@ public class PigeonMovement : BasicMovement {
 		Debug.Log("Pigeon Special!");
 		#endif
 
+		anim.SetTrigger("Flap");
+
 		if (facing) {
-			rb.AddForce((2*Vector2.up + Vector2.right) * flapStrength);
+			rb.AddForce((2*Vector2.up/* + Vector2.right*/) * flapStrength);
 		} else {
-			rb.AddForce((2*Vector2.up + Vector2.left) * flapStrength);
+			rb.AddForce((2*Vector2.up/* + Vector2.left*/) * flapStrength);
 		}
 	}
 
