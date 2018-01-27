@@ -19,7 +19,7 @@ public class PlaneMovement : BasicMovement {
 	private float currentRotation;
 	private float tolerance = 0.05f;
 	public Rigidbody2D rb;
-	public Collider2D collider;
+	public Collider2D smollider;
 
 
 
