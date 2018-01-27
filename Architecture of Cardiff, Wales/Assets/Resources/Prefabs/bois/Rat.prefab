@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 60813394737963974}
   - component: {fileID: 114878382990956798}
   - component: {fileID: 114351238947229432}
+  - component: {fileID: 95111075268294598}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Untagged
@@ -92,6 +93,23 @@ PolygonCollider2D:
       - {x: -0.2738595, y: -0.008683205}
       - {x: 0.6529951, y: 0.3393526}
       - {x: 1.219018, y: -0.2670703}
+--- !u!95 &95111075268294598
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156168246122878}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f12cebe9dd836465da10def137744e83, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114351238947229432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,9 +134,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: 0
   deadzone: 0.1
+  noJump:
+    serializedVersion: 2
+    m_Bits: 0
   movementSpeed: 5
   jumpStrength: 300
   rb: {fileID: 50334063892426256}
+  anim: {fileID: 95111075268294598}
 --- !u!212 &212646401571939988
 SpriteRenderer:
   m_ObjectHideFlags: 1

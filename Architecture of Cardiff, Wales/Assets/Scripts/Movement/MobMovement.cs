@@ -8,6 +8,8 @@ public class MobMovement : BasicMovement {
 	public float movementSpeed = 1.0f;
 	public Rigidbody2D rb;
 
+	public Animator anim;
+
 	// Use this for initialization
 	void Start () {
 		#if DEBUG 

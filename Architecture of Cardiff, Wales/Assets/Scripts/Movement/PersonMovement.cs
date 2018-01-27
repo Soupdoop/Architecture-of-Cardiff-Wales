@@ -11,6 +11,8 @@ public class PersonMovement : BasicMovement {
 
 	private float jumpCD = 0.0f;
 
+	public Animator anim;
+
 	// Use this for initialization
 	void Start () {
 		#if DEBUG 
@@ -21,6 +23,9 @@ public class PersonMovement : BasicMovement {
 		}
 		if (sprite == null) {
 			sprite = GetComponent<SpriteRenderer>();
+		}
+		if (anim == null) {
+			anim = GetComponent<Animator>();
 		}
 	}
 
@@ -58,6 +63,8 @@ public class PersonMovement : BasicMovement {
 			sprite.flipX = true;
 		}
 
+		anim.SetBool("Wobble", true);
+
 		Vector2 curVel = rb.velocity;
 		curVel = new Vector2(-movementSpeed, curVel.y);
 
@@ -71,6 +78,9 @@ public class PersonMovement : BasicMovement {
 		if (sprite.flipX) {
 			sprite.flipX = false;
 		}
+
+		anim.SetBool("Wobble", true);
+
 		Vector2 curVel = rb.velocity;
 		curVel = new Vector2(movementSpeed, curVel.y);
 		rb.velocity = curVel;
@@ -85,6 +95,9 @@ public class PersonMovement : BasicMovement {
 	}
 
 	override protected void DoNeutralAction() {
+		
+		anim.SetBool("Wobble", false);
+
 		Vector2 curVel = rb.velocity;
 		curVel = new Vector2(0.0f, curVel.y);
 		rb.velocity = curVel;

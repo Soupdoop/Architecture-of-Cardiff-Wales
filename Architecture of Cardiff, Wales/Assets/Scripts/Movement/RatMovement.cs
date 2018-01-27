@@ -10,6 +10,8 @@ public class RatMovement : BasicMovement {
 
 	private float jumpCD = 0.0f;
 
+	public Animator anim;
+
 	// Use this for initialization
 	void Start () {
 		#if DEBUG 
@@ -17,6 +19,9 @@ public class RatMovement : BasicMovement {
 		#endif
 		if (rb == null) {
 			rb = GetComponent<Rigidbody2D>();
+		}
+		if (anim == null) {
+			anim = GetComponent<Animator>();
 		}
 	}
 
@@ -50,6 +55,8 @@ public class RatMovement : BasicMovement {
 		Debug.Log("Rat Left!");
 		#endif
 
+		anim.SetBool("Wobble", true);
+
 		Vector2 curVel = rb.velocity;
 		curVel = new Vector2(-movementSpeed, curVel.y);
 
@@ -60,6 +67,7 @@ public class RatMovement : BasicMovement {
 		#if DEBUG 
 		Debug.Log("Rat Right!");
 		#endif
+		anim.SetBool("Wobble", true);
 		Vector2 curVel = rb.velocity;
 		curVel = new Vector2(movementSpeed, curVel.y);
 		rb.velocity = curVel;
@@ -74,6 +82,7 @@ public class RatMovement : BasicMovement {
 	}
 
 	override protected void DoNeutralAction() {
+		anim.SetBool("Wobble", false);
 		Vector2 curVel = rb.velocity;
 		curVel = new Vector2(0.0f, curVel.y);
 		rb.velocity = curVel;
