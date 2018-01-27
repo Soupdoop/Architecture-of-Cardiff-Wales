@@ -42,3 +42,45 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: 1
+    uniqueID: 4104769583
+    locked: 0
+  - name: 2
+    uniqueID: 1703998007
+    locked: 0
+  - name: 3
+    uniqueID: 1857361789
+    locked: 0
+  - name: 4
+    uniqueID: 2415939521
+    locked: 0
+  - name: 5
+    uniqueID: 4009338895
+    locked: 0
+  - name: 6
+    uniqueID: 1552131871
+    locked: 0
+  - name: 7
+    uniqueID: 360065483
+    locked: 0
+  - name: 8
+    uniqueID: 1128777445
+    locked: 0
+  - name: 9
+    uniqueID: 590240539
+    locked: 0
+  - name: 10 - play
+    uniqueID: 473784175
+    locked: 0
+  - name: 11
+    uniqueID: 2501727881
+    locked: 0
+  - name: 12
+    uniqueID: 477067369
+    locked: 0
+  - name: 13
+    uniqueID: 4106503153
+    locked: 0
+  - name: 15
+    uniqueID: 2928086743
+    locked: 0
