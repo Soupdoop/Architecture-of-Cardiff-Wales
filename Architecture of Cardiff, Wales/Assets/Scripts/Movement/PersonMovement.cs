@@ -9,7 +9,9 @@ public class PersonMovement : BasicMovement {
 	public Rigidbody2D rb;
 	public SpriteRenderer sprite;
 
-	bool onGround = true;
+	private float jumpCD = 0.0f;
+
+	public Animator anim;
 
 	// Use this for initialization
 	void Start () {
@@ -22,10 +24,13 @@ public class PersonMovement : BasicMovement {
 		if (sprite == null) {
 			sprite = GetComponent<SpriteRenderer>();
 		}
+		if (anim == null) {
+			anim = GetComponent<Animator>();
+		}
 	}
 
 	override protected void UpdateFields() {
-
+		if (jumpCD > 0.0f) jumpCD -= Time.deltaTime;
 	}
 
 	override protected void DoUpAction() {
@@ -33,12 +38,12 @@ public class PersonMovement : BasicMovement {
 		//Debug.Log("Person Up!");
 		#endif
 
-		if (onGround) {
+		if (jumpCD <= 0.0f && checkOnGround()) {
 			#if DEBUG
 			Debug.Log("Person Jumping!");
 			#endif
 			rb.AddForce(Vector2.up * jumpStrength);
-			onGround = false;
+			jumpCD = 0.5f;
 		}
 	}
 
@@ -58,6 +63,8 @@ public class PersonMovement : BasicMovement {
 			sprite.flipX = true;
 		}
 
+		anim.SetBool("Wobble", true);
+
 		Vector2 curVel = rb.velocity;
 		curVel = new Vector2(-movementSpeed, curVel.y);
 
@@ -71,6 +78,9 @@ public class PersonMovement : BasicMovement {
 		if (sprite.flipX) {
 			sprite.flipX = false;
 		}
+
+		anim.SetBool("Wobble", true);
+
 		Vector2 curVel = rb.velocity;
 		curVel = new Vector2(movementSpeed, curVel.y);
 		rb.velocity = curVel;
@@ -85,33 +95,11 @@ public class PersonMovement : BasicMovement {
 	}
 
 	override protected void DoNeutralAction() {
+		
+		anim.SetBool("Wobble", false);
+
 		Vector2 curVel = rb.velocity;
 		curVel = new Vector2(0.0f, curVel.y);
 		rb.velocity = curVel;
-	}
-
-	void OnCollisionEnter2D(Collision2D coll) {
-		#if DEBUG
-		Debug.Log("Collision Entered!");
-		#endif
-		if (coll.gameObject.CompareTag("Ground")) {
-			Collider2D groundColl = coll.gameObject.GetComponent<Collider2D>();
-			Collider2D thisColl = GetComponent<Collider2D>();
-
-			Vector3 collMax = groundColl.bounds.max;
-			Vector3 thisMin = thisColl.bounds.min;
-
-			bool withinBounds = true;
-
-			#if DEBUG
-			Debug.Log("This Min.y: " + thisMin.y);
-			Debug.Log("Coll Max.y: " + collMax.y);
-			#endif
-
-			if (coll.gameObject.transform.position.y > transform.position.y) withinBounds = false;
-			if (thisColl.bounds.min.x > groundColl.bounds.max.x || thisColl.bounds.max.x < groundColl.bounds.min.x) withinBounds = false;
-
-			if (withinBounds) onGround = true;
-		}
 	}
 }
