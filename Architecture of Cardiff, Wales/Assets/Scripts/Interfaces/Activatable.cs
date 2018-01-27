@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Activatable : MonoBehaviour {
 
-	protected bool activated = true;
+	public bool activated = false;
 
 	public bool Activate() {
 		activated = true;

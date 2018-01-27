@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Activatable))]
 public class Infection : MonoBehaviour
 {
     // Use this for initialization
@@ -18,10 +19,13 @@ public class Infection : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
-        var other = coll.gameObject.GetComponent<Activatable>();
-        if (other)
+        if (GetComponent<Activatable>().activated)
         {
-            other.Activate();
+            var other = coll.gameObject.GetComponent<Activatable>();
+            if (other)
+            {
+                other.Activate();
+            }
         }
     }
 }
