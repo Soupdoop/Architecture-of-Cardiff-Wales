@@ -55,4 +55,35 @@ public abstract class BasicMovement : Activatable {
 	abstract protected void DoSpecialAction();
 
 	abstract protected void DoNeutralAction();
+
+	protected bool checkOnGround() {
+		Collider2D thisColl = GetComponent<Collider2D>();
+
+		Vector2 size = (Vector2)(thisColl.bounds.size);
+		Vector3 worldPos = thisColl.bounds.center;
+
+		float bottom = worldPos.y - (size.y / 2f);
+		float left = worldPos.x - (size.x / 2f);
+		float right = worldPos.x + (size.x / 2f);
+
+		RaycastHit2D blray = Physics2D.Raycast(new Vector2(left, bottom), Vector2.down, size.y/100.0f);
+		RaycastHit2D brray = Physics2D.Raycast(new Vector2(right, bottom), Vector2.down, size.y/100.0f);
+
+		return blray.collider != null || brray.collider != null;
+	}
+
+	void OnDrawGizmos() {
+		Collider2D thisColl = GetComponent<Collider2D>();
+
+		Vector2 size = (Vector2)(thisColl.bounds.size);
+		Vector3 worldPos = thisColl.bounds.center;
+
+		float bottom = worldPos.y - (size.y / 2f);
+		float left = worldPos.x - (size.x / 2f);
+		float right = worldPos.x + (size.x / 2f);
+
+		Gizmos.color = Color.red;
+		Gizmos.DrawLine(new Vector2(left, bottom), new Vector2(right, bottom));
+		Gizmos.DrawLine(new Vector2(left, bottom), new Vector2(left, bottom) + (Vector2.down*size.y/100.0f));
+	}
 }
