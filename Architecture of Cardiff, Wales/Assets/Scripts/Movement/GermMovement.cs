@@ -9,8 +9,6 @@ public class GermMovement : BasicMovement {
 	public float movementStrength = 1.0f;
 	public Rigidbody2D rb;
 
-	public const bool DEBUG = false;
-
 	// Use this for initialization
 	void Start () {
 		#if DEBUG 
@@ -21,6 +19,9 @@ public class GermMovement : BasicMovement {
 		}
 	}
 
+	override protected void UpdateFields() {
+
+	}
 
 	override protected void DoUpAction() {
 		#if DEBUG 
@@ -59,7 +60,11 @@ public class GermMovement : BasicMovement {
 		Debug.Log("Germ Special!");
 		#endif
 
-		rb.AddForce(rb.velocity);
+		rb.AddForce(rb.velocity * movementStrength);
+	}
+
+	override protected void DoNeutralAction() {
+		rb.AddForce(-1*rb.velocity);
 	}
 
 }
