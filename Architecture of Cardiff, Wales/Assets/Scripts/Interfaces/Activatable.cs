@@ -4,14 +4,14 @@ using UnityEngine;
 
 public abstract class Activatable : MonoBehaviour {
 
-	protected bool activated = true;
+	public bool activated = false;
 
-	bool Activate() {
+	public bool Activate() {
 		activated = true;
 		return activated;
 	}
 
-	bool Deactivate() {
+	public bool Deactivate() {
 		activated = false;
 		return activated;
 	}
