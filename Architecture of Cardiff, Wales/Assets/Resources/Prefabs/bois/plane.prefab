@@ -173,7 +173,7 @@ MonoBehaviour:
   normalLayer: 0
   flightLayer: 9
   rb: {fileID: 50841959132329944}
-  collider: {fileID: 60225224301953880}
+  smollider: {fileID: 0}
 --- !u!114 &114535372477494946
 MonoBehaviour:
   m_ObjectHideFlags: 1
