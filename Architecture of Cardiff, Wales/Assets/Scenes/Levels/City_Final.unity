@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -215,6 +215,26 @@ Prefab:
       propertyPath: m_Name
       value: birb (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: flapStrength
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109308630637136, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: lifetime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: movementSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 50554879021666058, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
   m_IsPrefabParent: 0
@@ -371,6 +391,11 @@ Prefab:
       propertyPath: m_Name
       value: Rat (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
   m_IsPrefabParent: 0
@@ -422,6 +447,26 @@ Prefab:
       propertyPath: m_Name
       value: birb (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: flapStrength
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109308630637136, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: lifetime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: movementSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 50554879021666058, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
   m_IsPrefabParent: 0
@@ -472,6 +517,26 @@ Prefab:
     - target: {fileID: 1869652753929166, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
       propertyPath: m_Name
       value: birb (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: flapStrength
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109308630637136, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: lifetime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: movementSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 50554879021666058, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
@@ -626,6 +691,26 @@ Prefab:
     - target: {fileID: 1869652753929166, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
       propertyPath: m_Name
       value: birb (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: flapStrength
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109308630637136, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: lifetime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: movementSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 50554879021666058, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
@@ -814,6 +899,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: flapStrength
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109308630637136, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: movementSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 50554879021666058, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
   m_IsPrefabParent: 0
@@ -864,6 +969,26 @@ Prefab:
     - target: {fileID: 1869652753929166, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
       propertyPath: m_Name
       value: birb (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: flapStrength
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109308630637136, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: lifetime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: movementSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 50554879021666058, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
@@ -970,6 +1095,11 @@ Prefab:
     - target: {fileID: 1156168246122878, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
       propertyPath: m_Name
       value: Rat (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
@@ -1138,6 +1268,11 @@ Prefab:
       propertyPath: m_Name
       value: Rat (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
   m_IsPrefabParent: 0
@@ -1236,6 +1371,11 @@ Prefab:
       propertyPath: m_Name
       value: Rat (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
   m_IsPrefabParent: 0
@@ -1286,6 +1426,11 @@ Prefab:
     - target: {fileID: 1156168246122878, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
       propertyPath: m_Name
       value: Rat (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
@@ -1704,6 +1849,26 @@ Prefab:
       propertyPath: m_Name
       value: birb (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: flapStrength
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109308630637136, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: lifetime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: movementSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 50554879021666058, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
   m_IsPrefabParent: 0
@@ -1754,6 +1919,11 @@ Prefab:
     - target: {fileID: 1156168246122878, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
       propertyPath: m_Name
       value: Rat (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
@@ -1860,6 +2030,11 @@ Prefab:
       propertyPath: m_Name
       value: Rat (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
   m_IsPrefabParent: 0
@@ -1910,6 +2085,11 @@ Prefab:
     - target: {fileID: 1156168246122878, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
       propertyPath: m_Name
       value: Rat (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
@@ -2021,6 +2201,26 @@ Prefab:
       propertyPath: m_Name
       value: birb (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: flapStrength
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109308630637136, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: lifetime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: movementSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 50554879021666058, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
   m_IsPrefabParent: 0
@@ -2071,6 +2271,11 @@ Prefab:
     - target: {fileID: 1156168246122878, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
       propertyPath: m_Name
       value: Rat (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
@@ -2233,6 +2438,11 @@ Prefab:
       propertyPath: m_Name
       value: Rat (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
   m_IsPrefabParent: 0
@@ -2284,6 +2494,11 @@ Prefab:
       propertyPath: m_Name
       value: Rat (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
   m_IsPrefabParent: 0
@@ -2334,6 +2549,11 @@ Prefab:
     - target: {fileID: 1156168246122878, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
       propertyPath: m_Name
       value: Rat (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
@@ -2554,6 +2774,26 @@ Prefab:
       propertyPath: m_Name
       value: birb (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: flapStrength
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109308630637136, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: lifetime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: movementSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 50554879021666058, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
   m_IsPrefabParent: 0
@@ -2604,6 +2844,11 @@ Prefab:
     - target: {fileID: 1156168246122878, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
       propertyPath: m_Name
       value: Rat (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
@@ -2805,6 +3050,11 @@ Prefab:
       propertyPath: m_Name
       value: Rat (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
   m_IsPrefabParent: 0
@@ -2855,6 +3105,11 @@ Prefab:
     - target: {fileID: 1156168246122878, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
       propertyPath: m_Name
       value: Rat (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
@@ -2966,6 +3221,26 @@ Prefab:
       propertyPath: m_Name
       value: birb (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: flapStrength
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 114109308630637136, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: lifetime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: movementSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 50554879021666058, guid: 3e55f80aa3c6a421ca278808b295280b,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
   m_IsPrefabParent: 0
@@ -3016,6 +3291,11 @@ Prefab:
     - target: {fileID: 1156168246122878, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
       propertyPath: m_Name
       value: Rat (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114351238947229432, guid: 32a6b5d39abec463f8249a836d94334d,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32a6b5d39abec463f8249a836d94334d, type: 2}
