@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour {
 
     public Text levelNameText;
     public Dictionary<string, string> levelList = new Dictionary<string, string>() {
+        { "SPUNKYMONKEY", "MainMenu"},
         { "GemsTaining", "Germ_Training"},
         { "GemsNext", "Germ_next"},
         { "GemsBlood", "Germ_Blood"},
@@ -30,7 +31,9 @@ public class MainMenu : MonoBehaviour {
         { "CountyOne", "Country....... One"},
         { "HazmatTaining", "HazmatTraining"},
         { "CountyFun", "CountryFun"},
-        { "GalaxyTaining", "GalaxyTraining"}
+        { "Univese2", "Universe2"},
+        { "Univese3", "Universe3"},
+        { "UniveseFinal", "UniverseFinal"}
     };
 
     public void FindLevel(string lvl = "") {
