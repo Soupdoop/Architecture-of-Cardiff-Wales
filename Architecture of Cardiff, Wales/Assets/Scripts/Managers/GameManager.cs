@@ -40,7 +40,10 @@ public class GameManager : MonoBehaviour {
     }
 
     public void NextLevel() {
-        transitionScreen.SetActive(false);
         sceneHandler.NextLevel();
+    }
+
+    private void OnLevelWasLoaded(int level) {
+        transitionScreen.SetActive(false);
     }
 }

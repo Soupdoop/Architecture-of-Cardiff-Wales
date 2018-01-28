@@ -41,6 +41,7 @@ public class MusicMgmr : MonoBehaviour {
 		if (cached != listener) {
 			ChangeAudioMode ();
 		}
+		cached = listener;
 		if (UnityEngine.Input.GetKeyDown (KeyCode.T)) {
 			Debug.LogError ("changing tracks");
 			listener = TRACKS.HARP;
@@ -49,7 +50,13 @@ public class MusicMgmr : MonoBehaviour {
 
 	public void LevelToMode(int nextLevel)
 	{
-		if (nextLevel > 0 && nextLevel < 5) {
+		//Debug.LogError ("Changing Music");
+		if (nextLevel == 0 && nextLevel > -1) {
+			AllOffNOW ();
+			listener = TRACKS.INTRO;
+			GameObject.FindGameObjectWithTag ("GGJ").GetComponent<AudioSource> ().Play ();
+		}
+		else if (nextLevel < 5) {
 			listener = TRACKS.HARP;
 		} else if (nextLevel < 10) {
 			listener = TRACKS.DARK;
@@ -84,7 +91,7 @@ public class MusicMgmr : MonoBehaviour {
 			TransitionUp(temp2);
 			break;
 		case(TRACKS.HARP):
-			string[] temp3 = {"drumsvol","back1vol","kickvol","tracksvol","harpvol"};
+			string[] temp3 = {"drumsvol","kickvol","tracksvol","harpvol"};
 			TransitionUp(temp3);
 			break;
 		case(TRACKS.MARIMBAS):
@@ -93,6 +100,8 @@ public class MusicMgmr : MonoBehaviour {
 			break;
 		default:
 			break;
+		
+		
 
 		}
 	}
@@ -108,11 +117,12 @@ public class MusicMgmr : MonoBehaviour {
 			}
 			if (turnOff) 
 			{
-				FadeAudioDown (samson, -80.0f);
+				StartCoroutine(FadeAudioDown (samson, -80.0f));
 			} 
 			else 
 			{
-				FadeAudioUp (samson, 0.0f);
+				//Debug.LogWarning ("Turning Up " + samson);
+				StartCoroutine(FadeAudioUp (samson, 0.0f));
 			}
 		}
 	}
@@ -132,6 +142,7 @@ public class MusicMgmr : MonoBehaviour {
 		master.GetFloat (voltrack, out current);
 		while (current < to) 
 		{
+			//Debug.Log ("*** turning up " + voltrack);
 			master.GetFloat (voltrack, out current);
 			master.SetFloat (voltrack, current + change_per_second * Time.deltaTime);
 			yield return null;
