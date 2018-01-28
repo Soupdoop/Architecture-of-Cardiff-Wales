@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Levels/MainMenu.unity
-    guid: 6335409141d0e714fbab28ce22f256b4
+    guid: 91f7acf639465454580fd1fdd53d9a14
   - enabled: 1
     path: Assets/Scenes/Levels/Germ_Training.unity
     guid: 94ce9dfed5a54d240920eed8f83e1be9
@@ -51,7 +51,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/TrainMobAndCar.unity
     guid: 558b358ba53fda540815d690ab7d58b9
   - enabled: 1
-    path: Assets/Scenes/Levels/TrainPlaneAndTrain.unity
+    path: Assets/Scenes/Levels/TrainPlainAndTrain.unity
     guid: 8e70a953cf743064caf08026fbfe72bf
   - enabled: 1
     path: Assets/Scenes/Levels/Country....... One.unity
@@ -62,17 +62,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/CountryFun.unity
     guid: d3ee8392de37bbb4c9ae967c96954fc6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/GalaxyTraining.unity
     guid: 99ecbf21d40c4994a8657da6b1cd34cd
   - enabled: 1
-    path: Assets/Scenes/Levels/Galaxy2.unity
+    path: Assets/Scenes/Levels/Universe2.unity
     guid: 565e78d72a9634a4c93739cbb43942a6
   - enabled: 1
-    path: Assets/Scenes/Levels/Galaxy3.unity
+    path: Assets/Scenes/Levels/Universe3.unity
     guid: 9ccb55827ad271a48b5fdc16666bc643
   - enabled: 1
-    path: Assets/Scenes/Levels/GalaxyFinal.unity
+    path: Assets/Scenes/Levels/UniverseFinal.unity
     guid: c56bfd16ab180c643abc223033632f73
   - enabled: 1
     path: Assets/Scenes/Levels/GermLevel.unity
