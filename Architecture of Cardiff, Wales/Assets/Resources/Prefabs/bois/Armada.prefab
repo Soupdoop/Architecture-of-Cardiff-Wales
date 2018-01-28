@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infectedColor: {r: 0.6, g: 0.6, b: 0.5, a: 1}
+  infectedColor: {r: 0.40392157, g: 0.95686275, b: 0.32941177, a: 1}
   deadColor: {r: 1, g: 1, b: 1, a: 1}
   lifetime: 0
   timeUntilDeath: 0
@@ -336,6 +336,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   audio: {fileID: 0}
+  constantSound: 1
   movementStrength: 1
   rb: {fileID: 50474139794241094}
 --- !u!212 &212491619204411848
