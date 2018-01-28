@@ -38,7 +38,7 @@ public class PlaneMovement : BasicMovement {
 
 	override protected void UpdateFields() {
 
-        if (Vector2.Angle(transform.right, facing) > 90) {
+        if (Vector2.Angle(transform.right, facing) > 120) {
             facing *= -1;
         }
 
