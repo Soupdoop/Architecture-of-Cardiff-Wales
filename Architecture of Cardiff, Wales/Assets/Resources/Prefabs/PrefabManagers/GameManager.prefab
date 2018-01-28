@@ -1719,6 +1719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   master: {fileID: 24100000, guid: 3acda21298ea040acbc67c588ca1d69a, type: 2}
   listener: 0
+  change_per_second: 3
 --- !u!114 &114139060669487886
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1811,6 +1812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneHandler: {fileID: 114050829535045116}
+  musicMgmr: {fileID: 114091831437324228}
   canvasObj: {fileID: 1387720569452852}
   transitionScreen: {fileID: 1148594782015860}
 --- !u!114 &114358659876231728
