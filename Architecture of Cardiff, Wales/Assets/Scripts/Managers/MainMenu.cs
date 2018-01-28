@@ -7,7 +7,9 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour {
 
     public Text levelNameText;
-    public Dictionary<string, string> levelList = new Dictionary<string, string>() { };
+    public Dictionary<string, string> levelList = new Dictionary<string, string>() {
+        { "Ge-msA-eBad", "Germ_Training"}
+    };
 
     public void FindLevel(string lvl = "") {
         string levelName = (lvl.Equals("")) ? levelNameText.text : lvl;
