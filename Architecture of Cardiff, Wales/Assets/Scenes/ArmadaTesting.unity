@@ -275,7 +275,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!1001 &338038066
 Prefab:
@@ -324,6 +324,11 @@ Prefab:
         type: 2}
       propertyPath: activated
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292704445220168, guid: 3f1e6b5fb8e2c443299b85b86fe68c7c,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f1e6b5fb8e2c443299b85b86fe68c7c, type: 2}
@@ -407,6 +412,11 @@ Prefab:
         type: 2}
       propertyPath: activated
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292704445220168, guid: 3f1e6b5fb8e2c443299b85b86fe68c7c,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f1e6b5fb8e2c443299b85b86fe68c7c, type: 2}
@@ -508,7 +518,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!1001 &834791311
 Prefab:
@@ -553,6 +563,11 @@ Prefab:
         type: 2}
       propertyPath: activated
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292704445220168, guid: 3f1e6b5fb8e2c443299b85b86fe68c7c,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f1e6b5fb8e2c443299b85b86fe68c7c, type: 2}
@@ -686,6 +701,11 @@ Prefab:
       propertyPath: activated
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114292704445220168, guid: 3f1e6b5fb8e2c443299b85b86fe68c7c,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f1e6b5fb8e2c443299b85b86fe68c7c, type: 2}
   m_IsPrefabParent: 0
@@ -786,7 +806,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!1001 &1926089642
 Prefab:
@@ -830,6 +850,11 @@ Prefab:
     - target: {fileID: 1084216267783910, guid: 3f1e6b5fb8e2c443299b85b86fe68c7c, type: 2}
       propertyPath: m_Name
       value: Armada (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292704445220168, guid: 3f1e6b5fb8e2c443299b85b86fe68c7c,
+        type: 2}
+      propertyPath: lifetime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f1e6b5fb8e2c443299b85b86fe68c7c, type: 2}
@@ -931,5 +956,5 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0

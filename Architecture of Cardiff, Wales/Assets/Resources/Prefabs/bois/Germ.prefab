@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 60628441815268656}
   - component: {fileID: 114665922384334190}
   - component: {fileID: 114743175205082760}
+  - component: {fileID: 82841966798676046}
   m_Layer: 0
   m_Name: Germ
   m_TagString: Infected
@@ -97,6 +98,87 @@ PolygonCollider2D:
       - {x: 0.6936445, y: -0.5460552}
       - {x: 0.4252429, y: -0.07129629}
       - {x: 0.20769072, y: 0.83272916}
+--- !u!82 &82841966798676046
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1012589552573508}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 3acda21298ea040acbc67c588ca1d69a,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 3ff5125780fff8549ae96dfae22f8782, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.13
+  m_Pitch: -1.86
+  Loop: 1
+  Mute: 1
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 75
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!114 &114665922384334190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,6 +196,8 @@ MonoBehaviour:
   noJump:
     serializedVersion: 2
     m_Bits: 0
+  audio: {fileID: 0}
+  constantSound: 1
   movementStrength: 3
   rb: {fileID: 50614898787062582}
 --- !u!114 &114743175205082760

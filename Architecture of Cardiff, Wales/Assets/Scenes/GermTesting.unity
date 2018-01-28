@@ -150,7 +150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4362183304950248, guid: 2235dce93b7c44f0fb7c288a832438d6, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1012589552573508, guid: 2235dce93b7c44f0fb7c288a832438d6, type: 2}
       propertyPath: m_Name
@@ -302,7 +302,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!1 &713705644
 GameObject:
@@ -401,7 +401,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!1 &742378529
 GameObject:
@@ -433,7 +433,7 @@ Transform:
   - {fileID: 713705645}
   - {fileID: 1807022145}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &836589211
 GameObject:
@@ -689,7 +689,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!1 &1854482149
 GameObject:
@@ -869,7 +869,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!1001 &2004277165
 Prefab:
@@ -908,7 +908,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4362183304950248, guid: 2235dce93b7c44f0fb7c288a832438d6, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114665922384334190, guid: 2235dce93b7c44f0fb7c288a832438d6,
         type: 2}

@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114109308630637136}
   - component: {fileID: 60843916174860666}
   - component: {fileID: 95953180022978266}
+  - component: {fileID: 82967668200886708}
   m_Layer: 0
   m_Name: birb
   m_TagString: Untagged
@@ -144,6 +145,87 @@ PolygonCollider2D:
       - {x: 0.008816895, y: 0.22683205}
       - {x: 0.0067822267, y: 0.2288664}
       - {x: 0.0054257815, y: 0.2288664}
+--- !u!82 &82967668200886708
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1869652753929166}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 3acda21298ea040acbc67c588ca1d69a,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: e6b7c44e1a53e4e4fb0db0f7e1531407, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.54
+  m_Pitch: -0.14
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95953180022978266
 Animator:
   serializedVersion: 3
@@ -193,6 +275,8 @@ MonoBehaviour:
   noJump:
     serializedVersion: 2
     m_Bits: 0
+  audio: {fileID: 0}
+  constantSound: 0
   facing: 0
   flapStrength: 130
   movementSpeed: 10
@@ -200,6 +284,7 @@ MonoBehaviour:
   speedRandomMaximum: 100
   rb: {fileID: 50554879021666058}
   sprite: {fileID: 212403031169894504}
+  fatSize: 1
   anim: {fileID: 95953180022978266}
 --- !u!212 &212403031169894504
 SpriteRenderer:

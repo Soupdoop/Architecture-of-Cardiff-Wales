@@ -87,7 +87,8 @@ public class PigeonMovement : BasicMovement {
     override protected void DoSpecialAction() {
 		#if DEBUG 
 		Debug.Log("Pigeon Special!");
-		#endif
+        #endif
+        audio.PlayOneShot(audio.clip);
 		if (rb.velocity.y <= 0.0f){
 			anim.SetTrigger("Flap");
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2572,11 +2572,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4690133402400576, guid: d06f533a41e4d42cc8c532458e8953ac, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -12.003877
+      value: -11.09
       objectReference: {fileID: 0}
     - target: {fileID: 4690133402400576, guid: d06f533a41e4d42cc8c532458e8953ac, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -24.798794
+      value: -24.75
       objectReference: {fileID: 0}
     - target: {fileID: 4690133402400576, guid: d06f533a41e4d42cc8c532458e8953ac, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2926,7 +2926,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4107393442646356, guid: e55c77149e81c48b6aa362a86a0a13b2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 26.49534
+      value: 22.38
       objectReference: {fileID: 0}
     - target: {fileID: 4107393442646356, guid: e55c77149e81c48b6aa362a86a0a13b2, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2981,6 +2981,8 @@ MonoBehaviour:
   noJump:
     serializedVersion: 2
     m_Bits: 0
+  audio: {fileID: 0}
+  constantSound: 1
   rb: {fileID: 0}
 --- !u!61 &1929352401
 BoxCollider2D:
