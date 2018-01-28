@@ -8,6 +8,8 @@ TagManager:
   - Infected
   - Boogy
   - MainMenuAMin
+  - SceneHandler
+  - GGJ
   layers:
   - Default
   - TransparentFX
