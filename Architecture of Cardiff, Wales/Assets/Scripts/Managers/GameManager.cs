@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
     public static GameManager control;
 
     public SceneHandler sceneHandler;
+	public MusicMgmr musicMgmr;
 
     public GameObject canvasObj;
     private Canvas playCanvas;
@@ -25,6 +26,9 @@ public class GameManager : MonoBehaviour {
 
     public void Start() {
         playCanvas = canvasObj.GetComponent<Canvas>();
+		sceneHandler.requestLevelMusic = (int level) => {
+			musicMgmr.LevelToMode (level);
+		};
     }
 
     public void DisablePause(bool cantPause) {
