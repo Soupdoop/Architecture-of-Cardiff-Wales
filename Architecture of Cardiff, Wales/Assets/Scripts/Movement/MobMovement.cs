@@ -10,6 +10,9 @@ public class MobMovement : BasicMovement {
 
 	public Animator anim;
 
+	public int speedRandomMinimum;
+	public int speedRandomMaximum;
+
 	// Use this for initialization
 	void Start () {
 		#if DEBUG 
@@ -22,6 +25,7 @@ public class MobMovement : BasicMovement {
 		if (anim == null) {
 			anim = GetComponent<Animator>();
 		}
+		movementSpeed *= (float)Random.Range(speedRandomMinimum, speedRandomMaximum)/speedRandomMaximum;
 	}
 
 	override protected void UpdateFields() {

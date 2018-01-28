@@ -130,6 +130,8 @@ MonoBehaviour:
   jumpRandMax: 100
   rb: {fileID: 50770729937734966}
   sprite: {fileID: 212094362395496232}
+  speedRandomMinimum: 90
+  speedRandomMaximum: 100
   anim: {fileID: 95419975176286564}
 --- !u!212 &212094362395496232
 SpriteRenderer:

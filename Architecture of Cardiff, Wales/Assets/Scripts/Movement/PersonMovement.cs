@@ -11,6 +11,9 @@ public class PersonMovement : BasicMovement {
 	public Rigidbody2D rb;
 	public SpriteRenderer sprite;
 
+	public int speedRandomMinimum;
+	public int speedRandomMaximum;
+
 	private float jumpCD = 0.0f;
 
 	public Animator anim;
@@ -29,6 +32,7 @@ public class PersonMovement : BasicMovement {
 		if (anim == null) {
 			anim = GetComponent<Animator>();
 		}
+		movementSpeed *= (float)Random.Range(speedRandomMinimum, speedRandomMaximum)/speedRandomMaximum;
 	}
 
 	override protected void UpdateFields() {

@@ -206,6 +206,8 @@ MonoBehaviour:
   movementSpeed: 1
   rb: {fileID: 50220237871208558}
   anim: {fileID: 95557048004778086}
+  speedRandomMinimum: 80
+  speedRandomMaximum: 100
 --- !u!114 &114974763280780710
 MonoBehaviour:
   m_ObjectHideFlags: 1
