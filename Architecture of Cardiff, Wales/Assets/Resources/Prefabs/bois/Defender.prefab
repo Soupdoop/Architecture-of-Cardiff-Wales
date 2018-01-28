@@ -204,8 +204,9 @@ MonoBehaviour:
   targetTag: Infected
   chasingSprite: {fileID: 21300000, guid: 4339f9b47794a46b99c5c2378d1f1e21, type: 3}
   idleSprite: {fileID: 21300000, guid: 4339f9b47794a46b99c5c2378d1f1e21, type: 3}
-  chaseSpeed: 10
-  maxDist: 5
+  chaseSpeed: 5
+  maxDist: 15
+  origFacing: 1
   rb: {fileID: 50464903268548428}
   sprite: {fileID: 212278905717157990}
 --- !u!212 &212278905717157990
