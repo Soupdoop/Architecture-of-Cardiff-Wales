@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -514,6 +514,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4873655243830918, guid: ebc36e982b1516649a73335000af03a1,
     type: 2}
   m_PrefabInternal: {fileID: 1171731404}
+--- !u!114 &1171731406 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114047927159918120, guid: ebc36e982b1516649a73335000af03a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1171731404}
+  m_Script: {fileID: 11500000, guid: a2fd65e389073a541b2602f553a3d820, type: 3}
 --- !u!1001 &1250856167
 Prefab:
   m_ObjectHideFlags: 0
@@ -565,6 +571,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4873655243830918, guid: ebc36e982b1516649a73335000af03a1,
     type: 2}
   m_PrefabInternal: {fileID: 1250856167}
+--- !u!114 &1250856169 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114047927159918120, guid: ebc36e982b1516649a73335000af03a1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1250856167}
+  m_Script: {fileID: 11500000, guid: a2fd65e389073a541b2602f553a3d820, type: 3}
 --- !u!1 &1364304942
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,6 +789,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114555307709416032, guid: 0ccfba690c310084c826857084659587,
+        type: 2}
+      propertyPath: goals.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4923384095580786, guid: 0ccfba690c310084c826857084659587, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -809,6 +826,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 114555307709416032, guid: 0ccfba690c310084c826857084659587,
+        type: 2}
+      propertyPath: goals.Array.data[0]
+      value: 
+      objectReference: {fileID: 1171731406}
+    - target: {fileID: 114555307709416032, guid: 0ccfba690c310084c826857084659587,
+        type: 2}
+      propertyPath: goals.Array.data[1]
+      value: 
+      objectReference: {fileID: 1250856169}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0ccfba690c310084c826857084659587, type: 2}
   m_IsPrefabParent: 0
