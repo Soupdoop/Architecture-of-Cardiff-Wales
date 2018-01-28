@@ -555,8 +555,9 @@ GameObject:
   - component: {fileID: 751995561}
   - component: {fileID: 751995560}
   - component: {fileID: 751995559}
+  - component: {fileID: 751995562}
   m_Layer: 0
-  m_Name: circle1 (2)
+  m_Name: Target Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -634,6 +635,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &751995562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 751995558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34459cd42652c4adda8b1a2b87fb3e0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  hasBeenActivated: 0
+  deadzone: 0.1
+  noJump:
+    serializedVersion: 2
+    m_Bits: 0
+  rb: {fileID: 0}
 --- !u!1001 &777780062
 Prefab:
   m_ObjectHideFlags: 0
@@ -820,6 +839,63 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af1885f32fdf74d1da8cf9ccae93fadd, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1139484526
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114555307709416032, guid: 0ccfba690c310084c826857084659587,
+        type: 2}
+      propertyPath: goals.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923384095580786, guid: 0ccfba690c310084c826857084659587, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923384095580786, guid: 0ccfba690c310084c826857084659587, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923384095580786, guid: 0ccfba690c310084c826857084659587, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923384095580786, guid: 0ccfba690c310084c826857084659587, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923384095580786, guid: 0ccfba690c310084c826857084659587, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923384095580786, guid: 0ccfba690c310084c826857084659587, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923384095580786, guid: 0ccfba690c310084c826857084659587, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923384095580786, guid: 0ccfba690c310084c826857084659587, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 114555307709416032, guid: 0ccfba690c310084c826857084659587,
+        type: 2}
+      propertyPath: goals.Array.data[0]
+      value: 
+      objectReference: {fileID: 1961066937}
+    - target: {fileID: 114555307709416032, guid: 0ccfba690c310084c826857084659587,
+        type: 2}
+      propertyPath: goals.Array.data[1]
+      value: 
+      objectReference: {fileID: 751995562}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0ccfba690c310084c826857084659587, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1202058276
 Prefab:
@@ -1256,8 +1332,9 @@ GameObject:
   - component: {fileID: 1961066936}
   - component: {fileID: 1961066935}
   - component: {fileID: 1961066934}
+  - component: {fileID: 1961066937}
   m_Layer: 0
-  m_Name: circle1 (1)
+  m_Name: Target Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1335,6 +1412,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1961066937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1961066933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34459cd42652c4adda8b1a2b87fb3e0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  hasBeenActivated: 0
+  deadzone: 0.1
+  noJump:
+    serializedVersion: 2
+    m_Bits: 0
+  rb: {fileID: 0}
 --- !u!1001 &1967584241
 Prefab:
   m_ObjectHideFlags: 0
