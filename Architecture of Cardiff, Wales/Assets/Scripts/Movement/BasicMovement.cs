@@ -23,12 +23,12 @@ public abstract class BasicMovement : Activatable {
 	void Update () {
         // audio.mute = !activated;
 
-        if (!wasActive && activated && constantSound) {
+        if (!wasActive && activated && constantSound && audio) {
             audio.Play();
             wasActive = true;
         }
 
-        if (!activated && hasBeenActivated && constantSound) {
+        if (!activated && hasBeenActivated && constantSound && audio) {
             audio.Stop();
         }
 
