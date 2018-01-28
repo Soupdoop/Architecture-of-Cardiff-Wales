@@ -377,6 +377,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114091831437324228, guid: c7fc0d84a142cac4d9787839d13cdc9d,
+        type: 2}
+      propertyPath: change_per_second
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517704514014936, guid: c7fc0d84a142cac4d9787839d13cdc9d, type: 2}
+      propertyPath: m_TagString
+      value: SceneHandler
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035353830132776, guid: c7fc0d84a142cac4d9787839d13cdc9d, type: 2}
+      propertyPath: m_TagString
+      value: GGJ
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7fc0d84a142cac4d9787839d13cdc9d, type: 2}
   m_IsPrefabParent: 0

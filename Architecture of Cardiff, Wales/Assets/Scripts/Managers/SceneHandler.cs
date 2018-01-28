@@ -25,6 +25,8 @@ public class SceneHandler : MonoBehaviour {
         }
         else {
 			SceneManager.LoadSceneAsync(nextLevel);
+			if (requestLevelMusic != null)
+				requestLevelMusic (SceneManager.GetSceneByName (nextLevel).buildIndex);
         }
     }
 
