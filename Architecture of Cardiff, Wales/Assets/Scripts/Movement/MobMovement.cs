@@ -10,6 +10,9 @@ public class MobMovement : BasicMovement {
 
 	public Animator anim;
 
+	public int speedRandomMinimum;
+	public int speedRandomMaximum;
+
 	// Use this for initialization
 	void Start () {
 		#if DEBUG 
@@ -19,16 +22,22 @@ public class MobMovement : BasicMovement {
 		if (rb == null) {
 			rb = GetComponent<Rigidbody2D>();
 		}
+		if (anim == null) {
+			anim = GetComponent<Animator>();
+		}
+		movementSpeed *= (float)Random.Range(speedRandomMinimum, speedRandomMaximum)/speedRandomMaximum;
 	}
 
 	override protected void UpdateFields() {
 		rb.velocity = currentVelocity;
+		currentVelocity = Vector2.zero;
 	}
 
 	override protected void DoUpAction() {
 		#if DEBUG 
 		Debug.Log("Germ Up!");
 		#endif
+		anim.SetBool("Wobble", true);
 		currentVelocity.y = movementSpeed;
 	}
 
@@ -36,7 +45,7 @@ public class MobMovement : BasicMovement {
 		#if DEBUG 
 		Debug.Log("Germ Down!");
 		#endif
-
+		anim.SetBool("Wobble", true);
 		currentVelocity.y = -movementSpeed;
 	}
 
@@ -44,7 +53,7 @@ public class MobMovement : BasicMovement {
 		#if DEBUG 
 		Debug.Log("Germ Left!");
 		#endif
-
+		anim.SetBool("Wobble", true);
 		currentVelocity.x = -movementSpeed;
 	}
 
@@ -52,7 +61,7 @@ public class MobMovement : BasicMovement {
 		#if DEBUG 
 		Debug.Log("Germ Right!");
 		#endif
-
+		anim.SetBool("Wobble", true);
 		currentVelocity.x = movementSpeed;
 	}
 
@@ -63,6 +72,7 @@ public class MobMovement : BasicMovement {
 	}
 
 	override protected void DoNeutralAction() {
+		anim.SetBool("Wobble", false);
 		currentVelocity = Vector2.zero;
 	}
 }

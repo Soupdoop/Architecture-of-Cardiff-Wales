@@ -7,7 +7,10 @@ public abstract class BasicMovement : Activatable {
 	public float deadzone = 0.1f;
 
 	public LayerMask noJump;
-	
+
+	void Awake(){
+		hasBeenActivated = activated;
+	}
 	// Update is called once per frame
 	void Update () {
 		UpdateFields();

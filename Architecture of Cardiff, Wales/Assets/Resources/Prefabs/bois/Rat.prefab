@@ -140,6 +140,9 @@ MonoBehaviour:
   movementSpeed: 5
   jumpStrength: 300
   rb: {fileID: 50334063892426256}
+  sprite: {fileID: 0}
+  speedRandomMinimum: 80
+  speedRandomMaximum: 100
   anim: {fileID: 95111075268294598}
 --- !u!212 &212646401571939988
 SpriteRenderer:
