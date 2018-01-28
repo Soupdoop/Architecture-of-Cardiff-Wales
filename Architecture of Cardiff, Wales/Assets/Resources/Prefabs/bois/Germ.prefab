@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1012589552573508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.91, y: -1.69, z: 0}
+  m_LocalPosition: {x: -17.206343, y: -7.5710406, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,7 +56,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -114,7 +114,7 @@ MonoBehaviour:
   noJump:
     serializedVersion: 2
     m_Bits: 0
-  movementStrength: 5
+  movementStrength: 3
   rb: {fileID: 50614898787062582}
 --- !u!114 &114743175205082760
 MonoBehaviour:
