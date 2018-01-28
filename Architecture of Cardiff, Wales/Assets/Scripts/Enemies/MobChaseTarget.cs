@@ -9,11 +9,17 @@ public class MobChaseTarget : MonoBehaviour {
     public float chaseSpeed = 1.0f;
     public float maxDist = 1.0f;
 
+    public AudioSource audio;
+
     public Rigidbody2D rb;
     Animator anim;
 
     // Use this for initialization
     void Start () {
+        if (!audio) {
+            audio = gameObject.GetComponent<AudioSource>();
+        }
+        audio.Play();
         if (rb == null) rb = GetComponent<Rigidbody2D>();
         if (anim == null)
             anim = GetComponent<Animator>();

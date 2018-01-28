@@ -13,7 +13,7 @@ public class CarMovement : BasicMovement {
     private float xCompLastTime;
 	public Rigidbody2D rb;
 
-    public AudioSource audio;
+    // public AudioSource audio;
 
     private Vector2 facing;
 
@@ -47,12 +47,13 @@ public class CarMovement : BasicMovement {
             transform.localScale = new Vector3(scale.x, -1*scale.y, scale.z);
         }
         xCompLastTime = transform.right.x;
-
+        /*
         if (activated) {
             audio.mute = false;
         }
         else
             audio.mute = true;
+        */
     }
 
 	override protected void DoUpAction() {

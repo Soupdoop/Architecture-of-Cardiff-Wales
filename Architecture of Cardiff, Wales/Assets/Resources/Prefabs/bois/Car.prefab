@@ -700,11 +700,11 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 3acda21298ea040acbc67c588ca1d69a,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: a5df7abb941a21941b9a2b6cd12a9a54, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -802,12 +802,12 @@ MonoBehaviour:
   noJump:
     serializedVersion: 2
     m_Bits: 0
+  audio: {fileID: 0}
   movementStrength: 1.2
   topSpeed: 6
   steerSpeed: 0.7
   decelStrength: 1.5
   rb: {fileID: 0}
-  audio: {fileID: 0}
 --- !u!212 &212836727668625734
 SpriteRenderer:
   m_ObjectHideFlags: 1

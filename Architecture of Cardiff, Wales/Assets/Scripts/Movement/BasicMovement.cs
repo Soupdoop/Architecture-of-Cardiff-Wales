@@ -8,11 +8,30 @@ public abstract class BasicMovement : Activatable {
 
 	public LayerMask noJump;
 
+    public AudioSource audio;
+
+    public bool constantSound = true;
+    bool wasActive = false;
+
 	void Awake(){
 		hasBeenActivated = activated;
+        if (!audio) {
+            audio = gameObject.GetComponent<AudioSource>();
+        }
 	}
 	// Update is called once per frame
 	void Update () {
+        // audio.mute = !activated;
+
+        if (!wasActive && activated && constantSound) {
+            audio.Play();
+            wasActive = true;
+        }
+
+        if (!activated && hasBeenActivated && constantSound) {
+            audio.Stop();
+        }
+
 		UpdateFields();
 		if (activated) {
             float horiz = Input.GetAxis("Horizontal");
