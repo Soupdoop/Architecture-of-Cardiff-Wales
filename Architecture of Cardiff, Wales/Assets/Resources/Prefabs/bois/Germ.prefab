@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114743175205082760}
   m_Layer: 0
   m_Name: Germ
-  m_TagString: Untagged
+  m_TagString: Infected
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,6 +110,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: 0
   deadzone: 0.1
+  noJump:
+    serializedVersion: 2
+    m_Bits: 0
   movementStrength: 5
   rb: {fileID: 50614898787062582}
 --- !u!114 &114743175205082760

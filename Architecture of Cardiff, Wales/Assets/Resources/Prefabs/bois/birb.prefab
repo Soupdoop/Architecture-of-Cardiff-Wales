@@ -193,6 +193,8 @@ MonoBehaviour:
     m_Bits: 0
   flapStrength: 70
   movementSpeed: 5
+  speedRandomMinimum: 80
+  speedRandomMaximum: 100
   rb: {fileID: 50554879021666058}
   sprite: {fileID: 212403031169894504}
   anim: {fileID: 95953180022978266}

@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114631994776948656}
   - component: {fileID: 60091064818745964}
   - component: {fileID: 114974763280780710}
+  - component: {fileID: 95557048004778086}
   m_Layer: 0
   m_Name: people
   m_TagString: Untagged
@@ -169,6 +170,23 @@ PolygonCollider2D:
       - {x: 0.097397946, y: 0.45597744}
       - {x: 0.098042965, y: 0.4546875}
       - {x: 0.09610791, y: 0.45533246}
+--- !u!95 &95557048004778086
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1666798518271226}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f12cebe9dd836465da10def137744e83, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114631994776948656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -181,9 +199,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 1
-  deadzone: 0.1
+  deadzone: 0.9
+  noJump:
+    serializedVersion: 2
+    m_Bits: 0
   movementSpeed: 1
   rb: {fileID: 50220237871208558}
+  anim: {fileID: 95557048004778086}
+  speedRandomMinimum: 80
+  speedRandomMaximum: 100
 --- !u!114 &114974763280780710
 MonoBehaviour:
   m_ObjectHideFlags: 1

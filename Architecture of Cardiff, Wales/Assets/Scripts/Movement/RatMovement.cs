@@ -7,6 +7,10 @@ public class RatMovement : BasicMovement {
 	public float movementSpeed = 1.0f;
 	public float jumpStrength = 1.0f;
 	public Rigidbody2D rb;
+	public SpriteRenderer sprite;
+
+	public int speedRandomMinimum;
+	public int speedRandomMaximum;
 
 	private float jumpCD = 0.0f;
 
@@ -20,9 +24,13 @@ public class RatMovement : BasicMovement {
 		if (rb == null) {
 			rb = GetComponent<Rigidbody2D>();
 		}
+		if (sprite == null) {
+			sprite = GetComponent<SpriteRenderer>();
+		}
 		if (anim == null) {
 			anim = GetComponent<Animator>();
 		}
+		movementSpeed *= (float)Random.Range(speedRandomMinimum, speedRandomMaximum)/speedRandomMaximum;
 	}
 
 	override protected void UpdateFields() {
@@ -55,6 +63,10 @@ public class RatMovement : BasicMovement {
 		Debug.Log("Rat Left!");
 		#endif
 
+		if (!sprite.flipX) {
+			sprite.flipX = true;
+		}
+
 		anim.SetBool("Wobble", true);
 
 		Vector2 curVel = rb.velocity;
@@ -67,6 +79,9 @@ public class RatMovement : BasicMovement {
 		#if DEBUG 
 		Debug.Log("Rat Right!");
 		#endif
+		if (sprite.flipX) {
+			sprite.flipX = false;
+		}
 		anim.SetBool("Wobble", true);
 		Vector2 curVel = rb.velocity;
 		curVel = new Vector2(movementSpeed, curVel.y);

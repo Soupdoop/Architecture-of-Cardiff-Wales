@@ -7,6 +7,8 @@ public class PigeonMovement : BasicMovement {
 	bool facing = false; // true == right, false == left
 	public float flapStrength = 1.0f;
 	public float movementSpeed = 1.0f;
+	public int speedRandomMinimum;
+	public int speedRandomMaximum;
 	public Rigidbody2D rb;
 
 	public SpriteRenderer sprite;
@@ -27,6 +29,7 @@ public class PigeonMovement : BasicMovement {
 		if (anim == null) {
 			anim = GetComponent<Animator>();
 		}
+		movementSpeed *= (float)Random.Range(speedRandomMinimum, speedRandomMaximum)/speedRandomMaximum;
 	}
 	
 	override protected void UpdateFields() {
@@ -37,8 +40,6 @@ public class PigeonMovement : BasicMovement {
 		#if DEBUG 
 		//Debug.Log("Pigeon Up!");
 		#endif
-
-
 	}
 
 	override protected void DoDownAction() {
@@ -53,6 +54,8 @@ public class PigeonMovement : BasicMovement {
 		Debug.Log("Pigeon Left!");
 		#endif
 
+		anim.SetBool("Wobble", true);
+
 		rb.AddForce(Vector2.left * movementSpeed);
 
 		facing = false;
@@ -63,6 +66,8 @@ public class PigeonMovement : BasicMovement {
 		#if DEBUG 
 		Debug.Log("Pigeon Right!");
 		#endif
+
+		anim.SetBool("Wobble", true);
 
 		rb.AddForce(Vector2.right * movementSpeed);
 
@@ -85,6 +90,6 @@ public class PigeonMovement : BasicMovement {
 	}
 
 	override protected void DoNeutralAction() {
-		
+		anim.SetBool("Wobble", false);
 	}
 }

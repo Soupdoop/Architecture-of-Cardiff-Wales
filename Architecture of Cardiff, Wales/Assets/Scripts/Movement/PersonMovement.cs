@@ -6,8 +6,13 @@ public class PersonMovement : BasicMovement {
 
 	public float movementSpeed = 1.0f;
 	public float jumpStrength = 1.0f;
+	public int jumpRandMin = 10;
+	public int jumpRandMax = 10;
 	public Rigidbody2D rb;
 	public SpriteRenderer sprite;
+
+	public int speedRandomMinimum;
+	public int speedRandomMaximum;
 
 	private float jumpCD = 0.0f;
 
@@ -27,6 +32,7 @@ public class PersonMovement : BasicMovement {
 		if (anim == null) {
 			anim = GetComponent<Animator>();
 		}
+		movementSpeed *= (float)Random.Range(speedRandomMinimum, speedRandomMaximum)/speedRandomMaximum;
 	}
 
 	override protected void UpdateFields() {
@@ -42,7 +48,8 @@ public class PersonMovement : BasicMovement {
 			#if DEBUG
 			Debug.Log("Person Jumping!");
 			#endif
-			rb.AddForce(Vector2.up * jumpStrength);
+			int randInt = Random.Range(jumpRandMin,jumpRandMax);
+			rb.AddForce(Vector2.up * (jumpStrength * randInt/jumpRandMax));
 			jumpCD = 0.5f;
 		}
 	}

@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: wobble
+  m_Name: Wobble
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -23,7 +23,7 @@ AnimationClip:
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 0.16666667
+        time: 0.25
         value: {x: 0, y: 0, z: 10}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -31,8 +31,8 @@ AnimationClip:
       - serializedVersion: 2
         time: 0.5
         value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0, z: -34.285717}
-        outSlope: {x: 0, y: 0, z: -34.285717}
+        inSlope: {x: 0, y: 0, z: -40}
+        outSlope: {x: 0, y: 0, z: -40}
         tangentMode: 0
       - serializedVersion: 2
         time: 0.75
@@ -100,7 +100,7 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.16666667
+        time: 0.25
         value: 0
         inSlope: 0
         outSlope: 0
@@ -140,7 +140,7 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.16666667
+        time: 0.25
         value: 0
         inSlope: 0
         outSlope: 0
@@ -180,7 +180,7 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 0.16666667
+        time: 0.25
         value: 10
         inSlope: 0
         outSlope: 0
@@ -188,8 +188,8 @@ AnimationClip:
       - serializedVersion: 2
         time: 0.5
         value: 0
-        inSlope: -34.285717
-        outSlope: -34.285717
+        inSlope: -40
+        outSlope: -40
         tangentMode: 136
       - serializedVersion: 2
         time: 0.75

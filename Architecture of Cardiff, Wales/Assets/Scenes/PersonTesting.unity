@@ -393,6 +393,10 @@ Prefab:
       propertyPath: noJump.m_Bits
       value: 8192
       objectReference: {fileID: 0}
+    - target: {fileID: 1902586298860078, guid: d06f533a41e4d42cc8c532458e8953ac, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d06f533a41e4d42cc8c532458e8953ac, type: 2}
   m_IsPrefabParent: 0
@@ -444,6 +448,10 @@ Prefab:
       propertyPath: noJump.m_Bits
       value: 8192
       objectReference: {fileID: 0}
+    - target: {fileID: 1902586298860078, guid: d06f533a41e4d42cc8c532458e8953ac, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d06f533a41e4d42cc8c532458e8953ac, type: 2}
   m_IsPrefabParent: 0
@@ -494,6 +502,10 @@ Prefab:
         type: 2}
       propertyPath: noJump.m_Bits
       value: 8192
+      objectReference: {fileID: 0}
+    - target: {fileID: 1902586298860078, guid: d06f533a41e4d42cc8c532458e8953ac, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d06f533a41e4d42cc8c532458e8953ac, type: 2}
@@ -838,6 +850,10 @@ Prefab:
       propertyPath: m_Name
       value: man (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1902586298860078, guid: d06f533a41e4d42cc8c532458e8953ac, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d06f533a41e4d42cc8c532458e8953ac, type: 2}
   m_IsPrefabParent: 0
@@ -1132,8 +1148,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114096900205732414, guid: d06f533a41e4d42cc8c532458e8953ac,
         type: 2}
-      propertyPath: noJump.m_Bits
-      value: 8192
+      propertyPath: jumpRandMin
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114096900205732414, guid: d06f533a41e4d42cc8c532458e8953ac,
+        type: 2}
+      propertyPath: jumpRandMax
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d06f533a41e4d42cc8c532458e8953ac, type: 2}

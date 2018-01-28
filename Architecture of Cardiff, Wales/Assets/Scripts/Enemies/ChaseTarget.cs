@@ -29,7 +29,8 @@ public class ChaseTarget : MonoBehaviour {
 		foreach (GameObject go in targets) {
 			float dist = Vector2.Distance(transform.position, go.transform.position);
 			Debug.Log("Looking at " + go.name + " at distance of " + dist);
-			if (dist > maxDist) continue;
+			Activatable infected = go.GetComponent<Activatable>();
+			if (infected == null || !infected.activated || dist > maxDist) continue;
 			Debug.Log("Within max distance");
 			if (dist < minDistance) {
 				minDistance = dist;
