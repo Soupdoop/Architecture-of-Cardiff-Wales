@@ -11,8 +11,9 @@ public class ChaseTarget : MonoBehaviour {
 
 	public float chaseSpeed = 1.0f;
 	public float maxDist = 1.0f;
+    public bool origFacing = false; // true == right, false == left
 
-	public Rigidbody2D rb;
+    public Rigidbody2D rb;
 	public SpriteRenderer sprite;
 
 	// Use this for initialization
@@ -43,8 +44,11 @@ public class ChaseTarget : MonoBehaviour {
 		} else {
 			sprite.sprite = chasingSprite;
 			rb.AddForce((minObj.transform.position - transform.position).normalized * chaseSpeed);
-			sprite.flipX = minObj.transform.position.x > transform.position.x;
-			transform.localRotation = Quaternion.FromToRotation(transform.position, minObj.transform.position);
+			bool isRight = minObj.transform.position.x > transform.position.x;
+            sprite.flipX = isRight ^ origFacing;
+            Vector2 rotFrom = isRight ? Vector2.right : Vector2.left;
+            Vector2 rotTo = minObj.transform.position - transform.position;
+            transform.localRotation = Quaternion.FromToRotation(rotFrom, rotTo);
 		}
 	}
 
