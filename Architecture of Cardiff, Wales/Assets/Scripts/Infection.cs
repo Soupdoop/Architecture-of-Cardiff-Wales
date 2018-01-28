@@ -60,7 +60,7 @@ public class Infection : MonoBehaviour
 		}
 	}
 
-    void OnTriggerEnter2D(Collider2D coll)
+    void OnTriggerStay2D(Collider2D coll)
     {
         if (gameObject.GetComponent<Activatable>().hasBeenActivated) {
             var other = coll.gameObject.GetComponent<Activatable>();
