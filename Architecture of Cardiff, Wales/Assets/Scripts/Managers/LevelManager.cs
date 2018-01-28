@@ -8,6 +8,8 @@ public class LevelManager : MonoBehaviour {
 
 	public GameManager gm;
 
+    private bool done = false;
+
 	// Use this for initialization
 	void Start () {
 		gm = GameObject.FindGameObjectWithTag ("GameController").GetComponent<GameManager> ();
@@ -21,7 +23,8 @@ public class LevelManager : MonoBehaviour {
 				ready = false;
 			}
 		}
-		if (ready) {
+		if (ready && !done) {
+            done = true;
 			gm.TransitionAnim ();
 		}
 	}

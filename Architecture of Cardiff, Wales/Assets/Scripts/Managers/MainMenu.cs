@@ -21,7 +21,9 @@ public class MainMenu : MonoBehaviour {
 
     public void PlayGame(string level) {
         //TODO import other saved data
-        SceneManager.LoadSceneAsync(level);
+		GameObject sceneMgmr = GameObject.FindGameObjectWithTag ("SceneHandler");
+		if (sceneMgmr != null)
+			sceneMgmr.GetComponent<SceneHandler> ().NextLevel (level);
     }
 
     public void NewGame() {

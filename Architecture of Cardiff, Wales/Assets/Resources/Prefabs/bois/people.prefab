@@ -199,6 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 1
+  hasBeenActivated: 0
   deadzone: 0.9
   noJump:
     serializedVersion: 2
@@ -219,6 +220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  infectedColor: {r: 0.40392157, g: 0.95686275, b: 0.32941177, a: 1}
+  deadColor: {r: 1, g: 1, b: 1, a: 1}
+  lifetime: 0
+  timeUntilDeath: 0
 --- !u!212 &212111316616243562
 SpriteRenderer:
   m_ObjectHideFlags: 1
