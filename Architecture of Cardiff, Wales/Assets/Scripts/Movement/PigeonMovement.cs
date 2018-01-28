@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PigeonMovement : BasicMovement {
 
-	bool facing = false; // true == right, false == left
+	public bool facing = false; // true == right, false == left
 	public float flapStrength = 1.0f;
 	public float movementSpeed = 1.0f;
 	public int speedRandomMinimum;
@@ -59,7 +59,9 @@ public class PigeonMovement : BasicMovement {
 		rb.AddForce(Vector2.left * movementSpeed);
 
 		facing = false;
-		sprite.flipX = facing;
+        Vector2 scale = transform.localScale;
+        scale.x = 1;
+		transform.localScale = scale;
 	}
 
 	override protected void DoRightAction() {
@@ -72,10 +74,12 @@ public class PigeonMovement : BasicMovement {
 		rb.AddForce(Vector2.right * movementSpeed);
 
 		facing = true;
-		sprite.flipX = facing;
-	}
+        Vector2 scale = transform.localScale;
+        scale.x = -1;
+        transform.localScale = scale;
+    }
 
-	override protected void DoSpecialAction() {
+    override protected void DoSpecialAction() {
 		#if DEBUG 
 		Debug.Log("Pigeon Special!");
 		#endif

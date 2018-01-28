@@ -35,7 +35,7 @@ public class TrainMovement : BasicMovement {
         Debug.Log("Train Up!");
         #endif
         if (rb.velocity.magnitude < maxSpeed)
-            rb.AddForce((Vector2)transform.right * movementStrength);
+            rb.AddForce((Vector2)transform.right * movementStrength * Mathf.Sign(transform.parent.transform.localScale.x));
     }
 
     override protected void DoDownAction() {
@@ -43,7 +43,7 @@ public class TrainMovement : BasicMovement {
         Debug.Log("Train Down!");
         #endif
         if (rb.velocity.magnitude < maxSpeed)
-            rb.AddForce((Vector2)transform.right * -movementStrength);
+            rb.AddForce((Vector2)transform.right * -movementStrength * Mathf.Sign(transform.parent.transform.localScale.x));
     }
 
     override protected void DoLeftAction() {
