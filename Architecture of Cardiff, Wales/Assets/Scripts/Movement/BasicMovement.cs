@@ -15,9 +15,9 @@ public abstract class BasicMovement : Activatable {
 	void Update () {
 		UpdateFields();
 		if (activated) {
-			float horiz = Input.GetAxis("Horizontal");
-			float vert = Input.GetAxis("Vertical");
-
+            float horiz = Input.GetAxis("Horizontal");
+            float vert = Input.GetAxis("Vertical");
+            
 			bool action = false;
 
 			if (Mathf.Abs(horiz) > deadzone){
