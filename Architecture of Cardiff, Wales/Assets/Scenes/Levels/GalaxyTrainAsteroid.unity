@@ -180,6 +180,92 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af1885f32fdf74d1da8cf9ccae93fadd, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &188183852 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1884418326009810, guid: b7c592c2e035142d38f0ec72727f9b3a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1411828199}
+--- !u!82 &188183853
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 188183852}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 3acda21298ea040acbc67c588ca1d69a,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 341b495befb4d874f89535cd71447d7b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1001 &225944054
 Prefab:
   m_ObjectHideFlags: 0
@@ -967,6 +1053,21 @@ Prefab:
       propertyPath: activated
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114782008455782260, guid: b7c592c2e035142d38f0ec72727f9b3a,
+        type: 2}
+      propertyPath: infectedColor.r
+      value: 0.2647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782008455782260, guid: b7c592c2e035142d38f0ec72727f9b3a,
+        type: 2}
+      propertyPath: infectedColor.b
+      value: 0.36105487
+      objectReference: {fileID: 0}
+    - target: {fileID: 114782008455782260, guid: b7c592c2e035142d38f0ec72727f9b3a,
+        type: 2}
+      propertyPath: infectedColor.g
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7c592c2e035142d38f0ec72727f9b3a, type: 2}
   m_IsPrefabParent: 0
@@ -1402,6 +1503,8 @@ MonoBehaviour:
   noJump:
     serializedVersion: 2
     m_Bits: 0
+  audio: {fileID: 0}
+  constantSound: 1
   rb: {fileID: 0}
 --- !u!58 &2036866857
 CircleCollider2D:
