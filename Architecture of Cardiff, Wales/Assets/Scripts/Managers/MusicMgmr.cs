@@ -50,7 +50,7 @@ public class MusicMgmr : MonoBehaviour {
 
 	public void LevelToMode(int nextLevel)
 	{
-		Debug.LogError ("Changing Music");
+		//Debug.LogError ("Changing Music");
 		if (nextLevel == 0 && nextLevel > -1) {
 			AllOffNOW ();
 			listener = TRACKS.INTRO;
