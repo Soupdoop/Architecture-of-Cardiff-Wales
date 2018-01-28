@@ -7,13 +7,13 @@ public abstract class Activatable : MonoBehaviour {
 	public bool activated = false;
 	public bool hasBeenActivated = false;
 
-	public bool Activate() {
+	public virtual bool Activate() {
 		activated = true;
 		hasBeenActivated = true;
 		return activated;
 	}
 
-	public bool Deactivate() {
+	public virtual bool Deactivate() {
 		activated = false;
 		return activated;
 	}
