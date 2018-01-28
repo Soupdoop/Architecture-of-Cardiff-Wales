@@ -34,6 +34,12 @@ public class Infection : MonoBehaviour
 		print (gameObject.name + " died! rip");
 		sr.color = new Color (1f,1f,1f);
 		gameObject.GetComponent<Activatable> ().Deactivate ();
+
+        Animator anim = gameObject.GetComponent<Animator>();
+        if (anim) {
+            anim.enabled = false;
+        }
+
 	}
 	void OnCollisionEnter2D(Collision2D coll)
 	{
