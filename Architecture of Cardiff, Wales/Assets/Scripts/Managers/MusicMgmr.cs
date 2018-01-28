@@ -47,6 +47,21 @@ public class MusicMgmr : MonoBehaviour {
 		}
 	}
 
+	public void LevelToMode(int nextLevel)
+	{
+		if (nextLevel > 0 && nextLevel < 5) {
+			listener = TRACKS.HARP;
+		} else if (nextLevel < 10) {
+			listener = TRACKS.DARK;
+		} else if (nextLevel < 14) {
+			listener = TRACKS.MARIMBAS;
+		} else if (nextLevel < 19) {
+			listener = TRACKS.TROUBLE;
+		} else if (nextLevel < 23) {
+			listener = TRACKS.WORM;
+		}
+	}
+
 	void ChangeAudioMode()
 	{
 		switch (listener) 
