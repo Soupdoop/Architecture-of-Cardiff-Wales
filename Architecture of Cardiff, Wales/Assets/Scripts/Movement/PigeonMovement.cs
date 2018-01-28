@@ -13,6 +13,8 @@ public class PigeonMovement : BasicMovement {
 
 	public SpriteRenderer sprite;
 
+    public int fatSize = 1;
+
 	public Animator anim;
 
 	// Use this for initialization
@@ -30,6 +32,9 @@ public class PigeonMovement : BasicMovement {
 			anim = GetComponent<Animator>();
 		}
 		movementSpeed *= (float)Random.Range(speedRandomMinimum, speedRandomMaximum)/speedRandomMaximum;
+
+        rb.mass = fatSize;
+        transform.localScale *= fatSize;
 	}
 	
 	override protected void UpdateFields() {
@@ -60,7 +65,7 @@ public class PigeonMovement : BasicMovement {
 
 		facing = false;
         Vector2 scale = transform.localScale;
-        scale.x = 1;
+        scale.x = 1 * fatSize;
 		transform.localScale = scale;
 	}
 
@@ -75,7 +80,7 @@ public class PigeonMovement : BasicMovement {
 
 		facing = true;
         Vector2 scale = transform.localScale;
-        scale.x = -1;
+        scale.x = -1 * fatSize;
         transform.localScale = scale;
     }
 

@@ -97,7 +97,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   movementStrength: 3
-  rb: {fileID: 0}
+  rb: {fileID: 50972932277092344}
 --- !u!114 &114823984665675002
 MonoBehaviour:
   m_ObjectHideFlags: 1
