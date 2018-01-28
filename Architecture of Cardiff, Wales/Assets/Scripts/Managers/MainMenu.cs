@@ -31,6 +31,13 @@ public class MainMenu : MonoBehaviour {
         { "CountyOne", "Country....... One"},
         { "HazmatTaining", "HazmatTraining"},
         { "CountyFun", "CountryFun"},
+        { "GalaxyTain", "GalaxyTrain"},
+        { "GalaxyTainAsteoid", "GalaxyTainAsteoid"},
+        { "MediumAsteoid", "MediumAsteroid"},
+        { "GalaxyTainWell", "GalaxyTrainWell"},
+        { "GalaxyMediumWell", "GalaxyMediumWell"},
+        { "GalaxyFinal", "GalaxyFinal"},
+        { "UniveseTaining", "UniverseTraining"},
         { "Univese2", "Universe2"},
         { "Univese3", "Universe3"},
         { "UniveseFinal", "UniverseFinal"}
