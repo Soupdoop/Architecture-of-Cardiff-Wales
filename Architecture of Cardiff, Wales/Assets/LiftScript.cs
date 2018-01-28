@@ -61,6 +61,7 @@ public class LiftScript : MonoBehaviour {
     }
 
     void Stick(Collider2D other) {
+        Debug.Log("OOGA BOOGA");
         FixedJoint2D stickPoint = gameObject.AddComponent<FixedJoint2D>();
         stickPoint.connectedBody = other.attachedRigidbody;
     }
