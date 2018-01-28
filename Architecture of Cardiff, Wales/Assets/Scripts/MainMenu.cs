@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour {
     }
 
     public void NewGame() {
-        //RESET PROGRESS, START FROM FIRST LEVEL
+        PlayGame();
     }
 
     public void QuitGame() {
