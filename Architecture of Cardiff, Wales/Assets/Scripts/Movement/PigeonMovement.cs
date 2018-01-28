@@ -53,6 +53,8 @@ public class PigeonMovement : BasicMovement {
 		Debug.Log("Pigeon Left!");
 		#endif
 
+		anim.SetBool("Wobble", true);
+
 		rb.AddForce(Vector2.left * movementSpeed);
 
 		facing = false;
@@ -63,6 +65,8 @@ public class PigeonMovement : BasicMovement {
 		#if DEBUG 
 		Debug.Log("Pigeon Right!");
 		#endif
+
+		anim.SetBool("Wobble", true);
 
 		rb.AddForce(Vector2.right * movementSpeed);
 
@@ -85,6 +89,6 @@ public class PigeonMovement : BasicMovement {
 	}
 
 	override protected void DoNeutralAction() {
-		
+		anim.SetBool("Wobble", false);
 	}
 }

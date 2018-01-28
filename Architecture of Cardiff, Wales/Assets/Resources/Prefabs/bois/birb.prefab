@@ -185,6 +185,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: 0
   deadzone: 0.1
+  noJump:
+    serializedVersion: 2
+    m_Bits: 0
   flapStrength: 100
   movementSpeed: 5
   rb: {fileID: 50554879021666058}

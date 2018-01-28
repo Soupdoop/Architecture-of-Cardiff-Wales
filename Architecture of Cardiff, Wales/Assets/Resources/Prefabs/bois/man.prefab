@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114014286753003398}
   - component: {fileID: 70998680745335770}
   - component: {fileID: 212094362395496232}
+  - component: {fileID: 95419975176286564}
   m_Layer: 13
   m_Name: man
   m_TagString: Untagged
@@ -79,6 +80,23 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.7, y: 3.5}
   m_Direction: 0
+--- !u!95 &95419975176286564
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1902586298860078}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f12cebe9dd836465da10def137744e83, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114014286753003398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -108,8 +126,11 @@ MonoBehaviour:
     m_Bits: 8192
   movementSpeed: 5
   jumpStrength: 500
+  jumpRandMin: 90
+  jumpRandMax: 100
   rb: {fileID: 50770729937734966}
   sprite: {fileID: 212094362395496232}
+  anim: {fileID: 95419975176286564}
 --- !u!212 &212094362395496232
 SpriteRenderer:
   m_ObjectHideFlags: 1
