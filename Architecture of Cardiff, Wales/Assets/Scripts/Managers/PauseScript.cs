@@ -34,7 +34,9 @@ public class PauseScript : MonoBehaviour {
     }
 
     public void LoadMenu() {
-        SceneManager.LoadScene("MainMenu");
+		GameObject sceneMgmr = GameObject.FindGameObjectWithTag ("SceneHandler");
+		if (sceneMgmr != null)
+			sceneMgmr.GetComponent<SceneHandler> ().NextLevel ("MainMenu");
         Resume();
         Debug.Log("MAIN MENU");
     }
