@@ -79,13 +79,14 @@ public class PigeonMovement : BasicMovement {
 		#if DEBUG 
 		Debug.Log("Pigeon Special!");
 		#endif
+		if (rb.velocity.y <= 0.0f){
+			anim.SetTrigger("Flap");
 
-		anim.SetTrigger("Flap");
-
-		if (facing) {
-			rb.AddForce((2*Vector2.up/* + Vector2.right*/) * flapStrength);
-		} else {
-			rb.AddForce((2*Vector2.up/* + Vector2.left*/) * flapStrength);
+			if (facing) {
+				rb.AddForce((2*Vector2.up/* + Vector2.right*/) * flapStrength);
+			} else {
+				rb.AddForce((2*Vector2.up/* + Vector2.left*/) * flapStrength);
+			}
 		}
 	}
 
