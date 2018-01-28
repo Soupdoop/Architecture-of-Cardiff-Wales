@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 6335409141d0e714fbab28ce22f256b4
+  - enabled: 1
+    path: Assets/Scenes/Levels/Germ_Training.unity
+    guid: 94ce9dfed5a54d240920eed8f83e1be9

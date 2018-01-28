@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour {
     }
 
     public void NewGame() {
-        //PlayGame();
+        PlayGame("Germ_Training");
     }
 
     public void QuitGame() {
