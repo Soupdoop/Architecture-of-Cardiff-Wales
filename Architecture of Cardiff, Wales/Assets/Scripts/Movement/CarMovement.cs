@@ -13,6 +13,8 @@ public class CarMovement : BasicMovement {
     private float xCompLastTime;
 	public Rigidbody2D rb;
 
+    public AudioSource audio;
+
     private Vector2 facing;
 
     // Use this for initialization
@@ -26,6 +28,10 @@ public class CarMovement : BasicMovement {
 			rb = GetComponent<Rigidbody2D>();
 		}
         facing = Vector2.right;
+
+        if (!audio) {
+            audio = gameObject.GetComponent<AudioSource>();
+        }
     }
 
 	override protected void UpdateFields() {
@@ -41,6 +47,12 @@ public class CarMovement : BasicMovement {
             transform.localScale = new Vector3(scale.x, -1*scale.y, scale.z);
         }
         xCompLastTime = transform.right.x;
+
+        if (activated) {
+            audio.mute = false;
+        }
+        else
+            audio.mute = true;
     }
 
 	override protected void DoUpAction() {
