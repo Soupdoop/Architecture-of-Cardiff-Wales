@@ -50,6 +50,7 @@ public class Infection : MonoBehaviour
 				var otherinfection = coll.gameObject.GetComponent<Infection> ();
 				if (otherinfection) {
 					otherinfection.timeUntilDeath = otherinfection.lifetime;
+                    otherinfection.gameObject.tag = "Infected";
 				}
 			}
 		}
