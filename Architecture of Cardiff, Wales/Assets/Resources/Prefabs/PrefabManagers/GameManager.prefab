@@ -523,8 +523,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1396189206726296}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.913649, y: -1.3115418, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4078417639893986}
@@ -1719,6 +1719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   master: {fileID: 24100000, guid: 3acda21298ea040acbc67c588ca1d69a, type: 2}
   listener: 0
+  change_per_second: 3
 --- !u!114 &114139060669487886
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1811,6 +1812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneHandler: {fileID: 114050829535045116}
+  musicMgmr: {fileID: 114091831437324228}
   canvasObj: {fileID: 1387720569452852}
   transitionScreen: {fileID: 1148594782015860}
 --- !u!114 &114358659876231728
@@ -1904,7 +1906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62804a522b8afd64fad6a2fa43ffedde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gm: {fileID: 0}
+  gm: {fileID: 114280479016964926}
 --- !u!114 &114521425605237330
 MonoBehaviour:
   m_ObjectHideFlags: 1
