@@ -344,19 +344,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
-        type: 2}
-      propertyPath: activated
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1869652753929166, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
       propertyPath: m_Name
       value: birb (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
-        type: 2}
-      propertyPath: flapStrength
-      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
@@ -1295,11 +1285,6 @@ Prefab:
     - target: {fileID: 1869652753929166, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
       propertyPath: m_Name
       value: StartingBirb
-      objectReference: {fileID: 0}
-    - target: {fileID: 114482450971228062, guid: 3e55f80aa3c6a421ca278808b295280b,
-        type: 2}
-      propertyPath: activated
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e55f80aa3c6a421ca278808b295280b, type: 2}
