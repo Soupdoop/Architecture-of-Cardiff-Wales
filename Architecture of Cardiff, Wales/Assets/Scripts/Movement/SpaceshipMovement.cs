@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿#undef DEBUG
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
