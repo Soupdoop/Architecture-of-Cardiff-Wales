@@ -24,9 +24,9 @@ public class TrainMovement : BasicMovement {
 
     override protected void UpdateFields() {
         if (Vector2.Angle(transform.right, facing) > 90) {
-            Vector3 scale = transform.localScale;
-            transform.localScale = new Vector3(scale.x, -1 * scale.y, scale.z);
-            facing *= -1;
+            //Vector3 scale = transform.localScale;
+            //transform.localScale = new Vector3(scale.x, -1 * scale.y, scale.z);
+            //facing *= -1;
         }
     }
 
@@ -71,6 +71,6 @@ public class TrainMovement : BasicMovement {
     }
 
     override protected void DoNeutralAction() {
-        //rb.AddForce(-1*rb.velocity); //no deceleration for spaceships
+        rb.AddForce(-1*rb.velocity); //no deceleration for spaceships
     }
 }
