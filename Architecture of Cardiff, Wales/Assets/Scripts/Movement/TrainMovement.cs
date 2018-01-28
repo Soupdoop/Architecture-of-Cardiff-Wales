@@ -23,10 +23,10 @@ public class TrainMovement : BasicMovement {
     }
 
     override protected void UpdateFields() {
-        if (Vector2.Angle(transform.right, facing) > 90) {
-            //Vector3 scale = transform.localScale;
-            //transform.localScale = new Vector3(scale.x, -1 * scale.y, scale.z);
-            //facing *= -1;
+        if (Vector2.Angle(transform.right, facing) > 120) {
+            Vector3 scale = transform.localScale;
+            transform.localScale = new Vector3(scale.x, -1 * scale.y, scale.z);
+            facing *= -1;
         }
     }
 

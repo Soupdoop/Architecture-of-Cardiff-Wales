@@ -13,8 +13,10 @@ public class CarMovement : BasicMovement {
     private float xCompLastTime;
 	public Rigidbody2D rb;
 
-	// Use this for initialization
-	void Start () {
+    private Vector2 facing;
+
+    // Use this for initialization
+    void Start () {
 		#if DEBUG 
 		Debug.Log("This is a car starting.");
 		#endif
@@ -23,10 +25,16 @@ public class CarMovement : BasicMovement {
 		if (rb == null) {
 			rb = GetComponent<Rigidbody2D>();
 		}
-	}
+        facing = Vector2.right;
+    }
 
 	override protected void UpdateFields() {
-		rb.velocity = (Vector2)transform.right.normalized * currentSpeed; //always move toward heading
+
+        if (Vector2.Angle(transform.right, facing) > 120) {
+            facing *= -1;
+        }
+
+        rb.velocity = (Vector2)transform.right.normalized * currentSpeed; //always move toward heading
         //This flips the scale of the gameobject
         if (Mathf.Sign(xCompLastTime) != Mathf.Sign(transform.right.x)) {
             Vector3 scale = transform.localScale;

@@ -353,18 +353,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &302258148
+--- !u!1 &281066299
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 302258149}
-  - component: {fileID: 302258152}
-  - component: {fileID: 302258151}
-  - component: {fileID: 302258150}
-  - component: {fileID: 302258153}
+  - component: {fileID: 281066300}
+  - component: {fileID: 281066304}
+  - component: {fileID: 281066303}
+  - component: {fileID: 281066302}
+  - component: {fileID: 281066301}
   m_Layer: 0
   m_Name: TrainEngine
   m_TagString: Untagged
@@ -372,27 +372,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &302258149
+--- !u!4 &281066300
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 302258148}
+  m_GameObject: {fileID: 281066299}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2620907, y: 0.29048094, z: 1}
   m_Children:
-  - {fileID: 1804298914}
-  - {fileID: 403151159}
-  m_Father: {fileID: 1137203269}
+  - {fileID: 1906986155}
+  - {fileID: 655236173}
+  m_Father: {fileID: 407701840}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &302258150
+--- !u!114 &281066301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 281066299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff270be94fefddc4ca0c9cdccd8bf04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 1
+  deadzone: 0.1
+  noJump:
+    serializedVersion: 2
+    m_Bits: 0
+  maxSpeed: 100
+  movementStrength: 5
+  steerSpeed: 0
+  rb: {fileID: 281066303}
+--- !u!70 &281066302
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 302258148}
+  m_GameObject: {fileID: 281066299}
   m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
@@ -402,13 +422,13 @@ CapsuleCollider2D:
   m_Offset: {x: 0.5, y: -1.5}
   m_Size: {x: 27, y: 8}
   m_Direction: 1
---- !u!50 &302258151
+--- !u!50 &281066303
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 302258148}
+  m_GameObject: {fileID: 281066299}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -422,12 +442,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!212 &302258152
+--- !u!212 &281066304
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 302258148}
+  m_GameObject: {fileID: 281066299}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -466,26 +486,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!114 &302258153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 302258148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff270be94fefddc4ca0c9cdccd8bf04d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activated: 1
-  deadzone: 0.1
-  noJump:
-    serializedVersion: 2
-    m_Bits: 0
-  maxSpeed: 100
-  movementStrength: 5
-  steerSpeed: 0
-  rb: {fileID: 302258151}
 --- !u!1 &376186109
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,66 +632,35 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &403151158
+--- !u!1 &407701839
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 403151159}
-  - component: {fileID: 403151161}
-  - component: {fileID: 403151160}
-  m_Layer: 11
-  m_Name: Wheels (1)
+  - component: {fileID: 407701840}
+  m_Layer: 0
+  m_Name: Train
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &403151159
+  m_IsActive: 1
+--- !u!4 &407701840
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 403151158}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9999972, y: 0.9999967, z: 1}
-  m_Children: []
-  m_Father: {fileID: 302258149}
-  m_RootOrder: 1
+  m_GameObject: {fileID: 407701839}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.38, y: 0.73, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 281066300}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &403151160
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 403151158}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -4, y: -3}
-  m_Size: {x: 3, y: 1}
-  m_Direction: 1
---- !u!70 &403151161
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 403151158}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -4, y: 3}
-  m_Size: {x: 3, y: 1}
-  m_Direction: 1
 --- !u!1 &425991402
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,6 +847,66 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &655236172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 655236173}
+  - component: {fileID: 655236175}
+  - component: {fileID: 655236174}
+  m_Layer: 11
+  m_Name: Wheels (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &655236173
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 655236172}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999972, y: 0.9999967, z: 1}
+  m_Children: []
+  m_Father: {fileID: 281066300}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &655236174
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 655236172}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -4, y: -3}
+  m_Size: {x: 3, y: 1}
+  m_Direction: 1
+--- !u!70 &655236175
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 655236172}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -4, y: 3}
+  m_Size: {x: 3, y: 1}
+  m_Direction: 1
 --- !u!1 &919137338
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,35 +1044,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &1137203268
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1137203269}
-  m_Layer: 0
-  m_Name: Train
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1137203269
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1137203268}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.38, y: 0.73, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 302258149}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1236829153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,16 +1648,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &1804298913
+--- !u!1 &1906986154
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1804298914}
-  - component: {fileID: 1804298916}
-  - component: {fileID: 1804298915}
+  - component: {fileID: 1906986155}
+  - component: {fileID: 1906986157}
+  - component: {fileID: 1906986156}
   m_Layer: 11
   m_Name: Wheels
   m_TagString: Untagged
@@ -1665,25 +1665,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1804298914
+--- !u!4 &1906986155
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1804298913}
+  m_GameObject: {fileID: 1906986154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 302258149}
+  m_Father: {fileID: 281066300}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &1804298915
+--- !u!70 &1906986156
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1804298913}
+  m_GameObject: {fileID: 1906986154}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -1693,12 +1693,12 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -3}
   m_Size: {x: 3, y: 1}
   m_Direction: 1
---- !u!70 &1804298916
+--- !u!70 &1906986157
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1804298913}
+  m_GameObject: {fileID: 1906986154}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
