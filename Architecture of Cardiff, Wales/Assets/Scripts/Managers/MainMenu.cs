@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 public class MainMenu : MonoBehaviour {
 
     public Text levelNameText;
@@ -50,6 +54,11 @@ public class MainMenu : MonoBehaviour {
 
     public void QuitGame() {
         Debug.Log("QUIT");
-        Application.Quit();
+		#if UNITY_STANDALONE
+		Application.Quit();
+		#endif
+		#if UNITY_EDITOR
+		EditorApplication.Exit(0);
+		#endif
     }
 }
