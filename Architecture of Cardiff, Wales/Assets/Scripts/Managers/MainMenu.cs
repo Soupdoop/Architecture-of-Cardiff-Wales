@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour {
 
     public void PlayGame(string level) {
         //TODO import other saved data
-        SceneManager.LoadScene(level);
+        SceneManager.LoadSceneAsync(level);
     }
 
     public void NewGame() {
