@@ -55,7 +55,8 @@ GameObject:
   - component: {fileID: 50295764126386630}
   - component: {fileID: 70178297988083158}
   - component: {fileID: 114110752815946576}
-  m_Layer: 0
+  - component: {fileID: 114569685830470190}
+  m_Layer: 15
   m_Name: TrainEngine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +83,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1318284189407938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -6.350626, y: 0.0016228706, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4886848725402716}
@@ -96,8 +97,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1569159035666062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2620907, y: 0.29048094, z: 1}
+  m_LocalPosition: {x: 3.93, y: -1.26, z: 0}
+  m_LocalScale: {x: 0.075, y: 0.075, z: 1}
   m_Children:
   - {fileID: 4271521884311244}
   m_Father: {fileID: 4681121201827058}
@@ -144,7 +145,7 @@ CapsuleCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1569159035666062}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -179,7 +180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff270be94fefddc4ca0c9cdccd8bf04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activated: 1
+  activated: 0
+  hasBeenActivated: 0
   deadzone: 0.1
   noJump:
     serializedVersion: 2
@@ -188,6 +190,21 @@ MonoBehaviour:
   movementStrength: 5
   steerSpeed: 0
   rb: {fileID: 50295764126386630}
+--- !u!114 &114569685830470190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1569159035666062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 677a7bf3474a468448fed6767b8246fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infectedColor: {r: 0.6, g: 0.6, b: 0.5, a: 1}
+  deadColor: {r: 1, g: 1, b: 1, a: 1}
+  lifetime: 4
+  timeUntilDeath: 0
 --- !u!212 &212533053423029794
 SpriteRenderer:
   m_ObjectHideFlags: 1
