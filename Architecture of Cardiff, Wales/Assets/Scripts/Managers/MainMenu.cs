@@ -12,7 +12,25 @@ public class MainMenu : MonoBehaviour {
 
     public Text levelNameText;
     public Dictionary<string, string> levelList = new Dictionary<string, string>() {
-        { "Ge-msA-eBad", "Germ_Training"}
+        { "GemsTaining", "Germ_Training"},
+        { "GemsNext", "Germ_next"},
+        { "GemsBlood", "Germ_Blood"},
+        { "GemsFinal", "GermFinal"},
+        { "AtTaining", "RatTraining"},
+        { "AtTaining2", "RatTraining2"},
+        { "AtLevel3", "RatLevel3"},
+        { "AtLevel4", "RatLevel4"},
+        { "HumanTaining", "HumanTraining"},
+        { "ZACH", "Zach1"},
+        { "PigeonTaining", "PigeonTraining"},
+        { "City_Elevato", "City_Elevator"},
+        { "City_Final", "City_Final"},
+        { "TainMobandCa", "TrainMobAndCar"},
+        { "TainPlaneAndTain", "TrainPlaneAndTrain"},
+        { "CountyOne", "Country....... One"},
+        { "HazmatTaining", "HazmatTraining"},
+        { "CountyFun", "CountryFun"},
+        { "GalaxyTaining", "GalaxyTraining"}
     };
 
     public void FindLevel(string lvl = "") {
