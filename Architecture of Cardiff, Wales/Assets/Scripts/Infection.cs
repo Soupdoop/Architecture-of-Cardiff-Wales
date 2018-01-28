@@ -1,14 +1,16 @@
 ﻿using System.Collections;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Activatable))]
 public class Infection : MonoBehaviour
 {
+    public Color infectedColor = new Color(.6f, .6f, .5f);
+    public Color deadColor = new Color(1, 1, 1);
 	public float lifetime;
 	public float timeUntilDeath;
 	private SpriteRenderer sr;
+
 	// Use this for initialization
 	void Start()
 	{
@@ -25,9 +27,9 @@ public class Infection : MonoBehaviour
 			} else {
 				timeUntilDeath -= Time.deltaTime;
 				float fraction = timeUntilDeath / lifetime;
-				sr.color = new Color (1 - 0.6f * fraction, 1 - 0.6f*fraction, 1 - 0.5f * fraction);
-			}
-		}
+                sr.color = infectedColor * fraction + deadColor * (1 - fraction);
+            }
+        }
 	}
 
 	void Die(){
