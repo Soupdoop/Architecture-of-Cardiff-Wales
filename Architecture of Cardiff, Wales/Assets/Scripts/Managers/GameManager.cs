@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -12,7 +13,35 @@ public class GameManager : MonoBehaviour {
     public GameObject canvasObj;
     private Canvas playCanvas;
 
+    public PauseScript pauseScript;
+
     public GameObject transitionScreen;
+
+    private string[] LevelKeys =
+    {
+         "SPUNKYMONKEY",
+         "GemsTaining",
+         "GemsNext",
+         "GemsBlood",
+         "GemsFinal",
+         "AtTaining",
+         "AtTaining2",
+         "AtLevel3",
+         "AtLevel4",
+         "HumanTaining",
+         "ZACH",
+         "PigeonTaining",
+         "City_Elevato",
+         "City_Final",
+         "TainMobandCa",
+         "TainPlaneAndTain",
+         "CountyOne",
+         "HazmatTaining",
+         "CountyFun",
+         "Univese2",
+         "Univese3",
+         "UniveseFinal"
+    };
 
     private void Awake() {
         if (control == null) {
@@ -44,6 +73,8 @@ public class GameManager : MonoBehaviour {
     }
 
     private void OnLevelWasLoaded(int level) {
+        string levelName = LevelKeys[SceneManager.GetActiveScene().buildIndex];
+        pauseScript.SetLevelKey(levelName);
         transitionScreen.SetActive(false);
     }
 }

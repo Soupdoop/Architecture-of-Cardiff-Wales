@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseScript : MonoBehaviour {
 
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenu;
+
+    public Text levelKey;
 
     // Update is called once per frame
     void Update() {
@@ -31,6 +34,10 @@ public class PauseScript : MonoBehaviour {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+    }
+
+    public void SetLevelKey(string text = "") {
+        levelKey.text = text;
     }
 
     public void LoadMenu() {
