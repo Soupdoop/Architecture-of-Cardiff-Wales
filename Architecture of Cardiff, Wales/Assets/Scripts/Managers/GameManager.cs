@@ -6,8 +6,12 @@ public class GameManager : MonoBehaviour {
 
     public static GameManager control;
 
+    public SceneHandler sceneHandler;
+
     public GameObject canvasObj;
     private Canvas playCanvas;
+
+    public GameObject transitionScreen;
 
     private void Awake() {
         if (control == null) {
@@ -23,16 +27,16 @@ public class GameManager : MonoBehaviour {
         playCanvas = canvasObj.GetComponent<Canvas>();
     }
 
-    /*public void OnLevelWasLoaded(int level) {
-        if (level == 1) {
-            DisablePause(true);
-        }
-        else {
-            DisablePause(false);
-        }
-    }*/
-
     public void DisablePause(bool cantPause) {
         canvasObj.SetActive(cantPause);
+    }
+
+    public void TransitionAnim() {
+        transitionScreen.SetActive(true);
+    }
+
+    public void NextLevel() {
+        transitionScreen.SetActive(false);
+        sceneHandler.NextLevel();
     }
 }
